@@ -1,4 +1,4 @@
-import styles from "@/components/base/navbar_drawer/drawer.module.css";
+import styles from "@/components/base/navbar_drawer/Drawer.module.css";
 import Link from "next/link";
 
 const navitemStyles = {
