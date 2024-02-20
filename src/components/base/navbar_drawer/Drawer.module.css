@@ -10,7 +10,7 @@
 }
 
 .modal_parent {
-    position: fixed;
+    position: absolute;
     top: 377px;
     left: 0;
     right: 0;

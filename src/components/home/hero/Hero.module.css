@@ -65,6 +65,7 @@
         width: max-content;
     }
 }
+
 @media (max-width: 769px) {
     .container_parent {
         display: block;
