@@ -4,6 +4,10 @@
     --background: #fcfcfd;
 }
 
+@font-face {
+    font-family: 'Papyrus';
+    src: url("/fonts/papyrus.ttf") format("truetype");
+}
 /* @media (prefers-color-scheme: dark) {
     :root {
         --foreground-rgb: 255, 255, 255;
