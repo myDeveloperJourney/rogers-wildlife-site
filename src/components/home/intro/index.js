@@ -4,19 +4,9 @@ export default function Intro() {
     return (
         <div className={styles.parent_container}>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit vitae lectus ut malesuada.
-                Integer eleifend consectetur sapien vel luctus. Morbi finibus pretium consequat. Phasellus eu venenatis
-                tellus. Suspendisse luctus accumsan magna, id malesuada tortor hendrerit sed. Quisque neque neque,
-                sollicitudin id sodales eu, maximus ac risus. Nunc id mollis sapien, vel pharetra justo. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum at velit finibus,
-                egestas diam a, condimentum erat. Sed augue turpis, molestie ut semper a, viverra quis arcu. Integer id
-                dignissim tortor, quis convallis leo. Donec mollis consequat efficitur. Proin arcu justo, rhoncus ut
-                nunc sit amet, sodales facilisis quam. Sed non finibus dui, non blandit odio. Duis vitae massa vel augue
-                facilisis vulputate. Nulla viverra, massa sit amet eleifend molestie, lectus erat pretium dui, at
-                aliquam felis lorem at ipsum. Sed augue neque, sagittis eu purus volutpat, commodo elementum sem.
-                Pellentesque lacus risus, faucibus in dictum viverra, consequat quis orci. Quisque facilisis mi sapien,
-                sed fermentum dolor rutrum in. Phasellus sem massa, cursus in mi a, posuere ornare dui. Nulla facilisi.
-                Suspendisse interdum nulla erat, sit amet tincidunt mauris mollis non.
+                Rogers Wildlife Rehabilitation Center is a 501c3 nonprofit wildlife rescue organization in the Dallas/Fort-Worth metroplex specializing in the rescue and rehabilitation of injured, sick and orphaned birds of all types. Our goal is to restore the health and independence of these precious creatures so that they may be released back into their natural habitat. Rogers Wildlife serves as a sanctuary for the remaining birds, as they are deemed non-releasable due to the extent of their injuries.
+
+                Over the last decade, RWRC has provided medical treatment and care for more than forty thousand birds. The majority of birds that we receive come to us with life-threatening injuries as a result of animal attacks, nest displacement (orphaned), automobile strikes, natural/man-made disasters, or abuse. RWRC is entirely dependent on dedicated volunteers and private donations, as it does not receive any federal, state, or local government funding for its rehabilitation and conservation efforts.
             </p>
         </div>
     );
