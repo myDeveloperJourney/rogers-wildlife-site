@@ -1,19 +1,20 @@
-import styles from "@/components/base/footer/Footer.module.css";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import styles from "@/components/base/footer/Footer.module.css";
+
 
 export default function Footer() {
     const linkObjs = [
         { name: "Home", path: "/" },
-        { name: "Our Story", path: "/" },
-        { name: "In the News", path: "/" },
-        { name: "Found a Bird?", path: "/" },
-        { name: "How to Help", path: "/" },
-        { name: "Photot Gallery", path: "/" },
-        { name: "Educational Birds", path: "/" },
-        { name: "Contact Us", path: "/" },
+        { name: "Our Story", path: "/about" },
+        // NOTE: Not sure if we need this right now
+        // { name: "In the News", path: "/" },
+        { name: "Found a Bird?", path: "/found-a-bird" },
+        { name: "How to Help", path: "/how-to-help" },
+        { name: "Photo Gallery", path: "/see-our-birds" },
+        // NOTE: Not sure if we need this right now
+        // { name: "Educational Birds", path: "/" },
+        { name: "Contact Us", path: "/contact-us" },
     ];
 
     const links = linkObjs.map((obj) => {
@@ -44,11 +45,11 @@ export default function Footer() {
                 </div>
                 <div>
                     <p>
-                        Phone:972-225-4000 <a href="rogerswildlife@yahoo.com">rogerswildlife@yahoo.com</a>
+                        Phone: <a href="tel:1-972-225-4000">972-225-4000</a> Email: <a href="rogerswildlife@yahoo.com">rogerswildlife@yahoo.com</a>
                     </p>
                 </div>
                 <div>
-                    <p>Copyright 2016 Rogers WIldlife Rehabilitation Center. All Rights Reserved.</p>
+                    <p>Copyright {new Date().getFullYear()} Rogers WIldlife Rehabilitation Center. All Rights Reserved.</p>
                 </div>
             </footer>
         </div>
