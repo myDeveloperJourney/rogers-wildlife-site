@@ -51,12 +51,12 @@ export default function Navbar({ setNavOpen, isNavOpen }) {
             <nav className={styles.navbar}>
                 <Burger isNavOpen={isNavOpen} setNavOpen={setNavOpen} />
                 <ul className={styles.desktop_nav}>
-                    <NavLink linkText="Home" path="/" isScrollLink={true} />
-                    <NavLink linkText="About" path="#about" isScrollLink={true} />
-                    <NavLink linkText="Found A Bird" path="#found" isScrollLink={true} />
-                    <NavLink linkText="How To Help" path="#help" isScrollLink={true} />
-                    <NavLink linkText="See Our Birds" path="#birds" isScrollLink={true} />
-                    <NavLink linkText="Contact Us" path="#contact" isScrollLink={true} />
+                    <NavLink linkText="Home" path="/" isScrollLink={false} />
+                    <NavLink linkText="About" path="/about" isScrollLink={false} />
+                    <NavLink linkText="Found A Bird" path="/found-a-bird" isScrollLink={false} />
+                    <NavLink linkText="How To Help" path="/how-to-help" isScrollLink={false} />
+                    <NavLink linkText="See Our Birds" path="/see-our-birds" isScrollLink={false} />
+                    <NavLink linkText="Contact Us" path="/contact-us" isScrollLink={false} />
                 </ul>
                 <NavDrawer setNavOpen={setNavOpen} isNavOpen={isNavOpen} />
             </nav>
