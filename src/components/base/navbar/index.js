@@ -12,7 +12,7 @@ function NavLink({ linkText, path, isScrollLink }) {
     const isActive = (pathname) => (router ? router.pathname === pathname : false);
 
     const linkStyles = {
-        borderBottom: isActive(path) ? "2px solid #fff" : "none",
+        borderBottom: isActive(path) ? "2px solid #000" : "none",
         cursor: "pointer",
     };
 
@@ -45,36 +45,20 @@ function NavLink({ linkText, path, isScrollLink }) {
     );
 }
 
-export default function Navbar({ isMobileScreen, setNavOpen, isNavOpen }) {
+export default function Navbar({ setNavOpen, isNavOpen }) {
     return (
         <>
             <nav className={styles.navbar}>
-                {isMobileScreen ? (
-                    <>
-                        <Burger isNavOpen={isNavOpen} setNavOpen={setNavOpen} />
-                    </>
-                ) : (
-                    <>
-                        <ul>
-                            <NavLink linkText="About Us" path="/about" isScrollLink={false} />
-                            <NavLink linkText="Fence Types" path="/fence-types" isScrollLink={false} />
-                        </ul>
-                        <Link href="/">
-                            <Image
-                                src="/images/logo.svg"
-                                alt="logo"
-                                width={isMobileScreen ? 90 : 150}
-                                height={isMobileScreen ? 90 : 150}
-                                priority={true}
-                            />
-                        </Link>
-                        <ul>
-                            <NavLink linkText="Contact" path="#contact" isScrollLink={true} />
-                            <NavLink linkText="Services" path="#services" isScrollLink={true} />
-                        </ul>
-                    </>
-                )}
-                <NavDrawer isMobileScreen={isMobileScreen} setNavOpen={setNavOpen} isNavOpen={isNavOpen} />
+                <Burger isNavOpen={isNavOpen} setNavOpen={setNavOpen} />
+                <ul className={styles.desktop_nav}>
+                    <NavLink linkText="Home" path="/" isScrollLink={true} />
+                    <NavLink linkText="About" path="#about" isScrollLink={true} />
+                    <NavLink linkText="Found A Bird" path="#found" isScrollLink={true} />
+                    <NavLink linkText="How To Help" path="#help" isScrollLink={true} />
+                    <NavLink linkText="See Our Birds" path="#birds" isScrollLink={true} />
+                    <NavLink linkText="Contact Us" path="#contact" isScrollLink={true} />
+                </ul>
+                <NavDrawer setNavOpen={setNavOpen} isNavOpen={isNavOpen} />
             </nav>
         </>
     );

@@ -1,0 +1,22 @@
+.parent_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 0 0 0;
+}
+
+.socials_container {
+    width: max-content;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.title_container {
+    padding-left: 1rem;
+    width: max-content;
+    font-size: 18px;
+    align-self: flex-start;
+    min-width: 0;
+}

@@ -22,7 +22,7 @@ const links = [
     },
 ];
 
-export default function NavDrawer({ isNavOpen, setNavOpen, isMobileScreen }) {
+export default function NavDrawer({ isNavOpen, setNavOpen }) {
     return (
         <div className={isNavOpen ? styles.modal_parent : styles.modal_closed}>
             <div className={isNavOpen ? styles.div_parent : styles.modal_closed}>
@@ -32,7 +32,6 @@ export default function NavDrawer({ isNavOpen, setNavOpen, isMobileScreen }) {
                     </Link>
                 ))}
             </div>
-            <div className={styles.modal_background} onClick={() => setNavOpen(!isNavOpen)}></div>
         </div>
     );
 }

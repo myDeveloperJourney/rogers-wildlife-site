@@ -41,6 +41,7 @@ body {
     text-rendering: optimizeSpeed;
     font-family: Arial, sans-serif; /* or any default font you prefer */
     font-size: 16px; /* or whatever base size you prefer */
+    color: black;
     line-height: 1.5;
     background-color: #fcfcfd;
 }

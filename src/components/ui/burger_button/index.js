@@ -6,7 +6,7 @@ export default function Burger({ isNavOpen, setNavOpen }) {
     };
 
     return (
-        <nav className={isNavOpen ? styles.mobile_nav : null}>
+        <nav className={styles.mobile_nav}>
             <button
                 className={isNavOpen ? styles.clickedButton : styles.button}
                 id={styles.mobile_button}

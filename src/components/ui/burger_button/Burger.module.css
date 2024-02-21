@@ -1,9 +1,6 @@
 /* menu button */
 
 .mobile_nav {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     z-index: 3;
 }
 
@@ -25,7 +22,7 @@
     height: 5px;
     background-color: rgb(0, 0, 0);
     border-radius: 20rem;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 1s ease-in-out, background-color 1s ease-in-out;
 }
 
 .clickedButton span:nth-child(1) {
@@ -42,21 +39,21 @@
 }
 
 .clickedButton > span {
-    background-color: #ffffff !important;
+    background-color: #000000 !important;
 }
 
-@media (min-width: 768px) {
-    .navbar {
+@media (min-width: 769px) {
+    .mobile_nav {
         display: none;
     }
 }
 @media (max-width: 768px) {
-    .navbar {
+    .mobile_nav {
         display: flex;
     }
 }
 @media (max-width: 550px) {
-    .navbar {
+    .mobile_nav {
         padding: 40px 20px;
     }
 }
