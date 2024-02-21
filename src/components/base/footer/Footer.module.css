@@ -6,6 +6,11 @@
     flex-direction: column;
 }
 
+.parent_container a {
+    margin: .15rem;
+    font-weight: 700;
+}
+
 .socials_container {
     width: 10rem;
     display: flex;
