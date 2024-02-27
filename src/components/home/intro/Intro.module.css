@@ -5,7 +5,21 @@
     width: 100%;
 }
 
-@media (max-width: 769px) {
+.inner_container {
+    width: 100%;
+    max-width: 1440px;
+}
+
+@media (min-width: 426px) {
+    .inner_container {
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .inner_container {
+        margin: 0;
+    }
     .parent_container {
         padding: 0.5rem 1rem 0 1rem;
     }
