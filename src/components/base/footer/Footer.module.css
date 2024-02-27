@@ -7,17 +7,39 @@
 }
 
 .parent_container a {
-    margin: .15rem;
+    margin: 0.15rem;
     font-weight: 700;
 }
 
 .socials_container {
-    width: 10rem;
+    width: 15rem;
     display: flex;
     margin-bottom: 1rem;
 }
 
 .footer {
-    font-size: 8px;
     text-align: center;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.footer_contact {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 580px) {
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        font-size: 9px;
+    }
+    .footer_contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
