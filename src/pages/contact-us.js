@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
-import Map from "@/components/ui/map";
+// import Map from "@/components/ui/map";
 import styles from "@/styles/pages/contact-us.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
