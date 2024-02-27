@@ -1,9 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
-import Map from "@/components/home/map_actions";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +14,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main} ${inter.className}`}>
+            <main className={`${inter.className}`}>
                 <Hero />
                 <Layout>
                     <h1>See Our Birds</h1>
