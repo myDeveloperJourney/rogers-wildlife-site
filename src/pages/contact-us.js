@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
+import Map from "@/components/ui/map";
+import styles from "@/styles/pages/contact-us.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,40 +16,41 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main} ${inter.className}`}>
+            <main className={`${inter.className}`}>
                 <Hero />
                 <Layout>
-                    <main>
-                        <h1>Contact Us</h1>
+                    <div className={styles.PageContainer}>
                         <div>
-                            <section>
-                                <h3>Location</h3>
+                            <h1>Contact Us</h1>
+                            <section className={styles.PageSection}>
+                                <h2>Location</h2>
                                 <address>
                                     <p>Rogers Wildlife Rehabilitation Center</p>
                                     <p>1430 E. Cleveland Rd.</p>
                                     <p>Hutchins, TX 75141</p>
                                 </address>
-                                <p><strong>Phone</strong>: 972-225-4000</p>
-                                <p><strong>Email for general Inquires</strong>: contact@rogerswildlife.org</p>
+                                <p><strong>Phone</strong>: <a href="tel:972-225-4000">972-225-4000</a></p>
+                                <p><strong>Email for general Inquires</strong>: <a href="mailto:contact@rogerswildlife.org">contact@rogerswildlife.org</a></p>
                                 <div>Social Icons</div>
                             </section>
-                            <section>
-                                <h3>Hours</h3>
+                            <section className={styles.PageSection}>
+                                <h2>Hours</h2>
                                 <p>
-                                    <span>Open every day. Holiday hours may differ</span>
-                                    <span>Fall Hours: 9am - 4pm</span>
-                                    <span>Starting Sept. 1 - Every day</span>
-                                    <span>Summer Hours: 10am - 4pm</span>
-                                    Due to the corona virus situation we are open for bird drop offs between 10-4 every day. 
-                                    This is our busy season, and we do our best to answer everycall, 
+                                    <span className={styles.LineBreak}>Open every day. Holiday hours may differ</span>
+                                    <span className={styles.LineBreak}>Fall Hours: 9am - 4pm</span>
+                                    <span className={styles.LineBreak}>Starting Sept. 1 - Every day</span>
+                                    <span className={styles.LineBreak}>Summer Hours: 10am - 4pm</span>
+                                    <span className={styles.LineBreak}>Due to the corona virus situation we are open for bird drop offs between 10-4 every day.</span>
+                                    
+                                    This is our busy season, and we do our best to answer every call, 
                                     but due to the heavy call volume and calls coming in back to back, 
-                                    you may have to call a couple of times. 
+                                    you may have to call a couple of times.<br /> 
                                     Please be patient... 
                                     we are all volunteers and doing the best we can with the volume of birds and calls coming in. 
                                 </p>
                             </section>
-                            <section>
-                                <h3>Directions</h3>
+                            <section className={styles.PageSection}>
+                                <h2>Directions</h2>
                                 <ol>
                                     <li>Take I-45 South from Dallas.</li>
                                     <li>Take exit 274 at Dowdy Ferry Road/Hutchins just South of I-20.</li>
@@ -57,8 +59,8 @@ export default function Home() {
                                     <li>Rogers Wildlife is located on the left side of Cleveland Road, just before you get to the Republic Services.</li>
                                 </ol>
                             </section>
-                            <section>
-                                <h3>Far Away? Find Someone Closer</h3>
+                            <section className={styles.PageSection}>
+                                <h2>Far Away? Find Someone Closer</h2>
                                 <ul>
                                     <li><a href="http://tpwd.texas.gov/huntwild/wild/rehab/list/" target="_blank">List of Texas Wildlife Rehabilitators by County</a> (Make sure to check surrounding counties too!)</li>
                                     <li>Call the DFW Wildlife Coalition at 972-234-9453</li>
@@ -66,10 +68,13 @@ export default function Home() {
                                 </ul>
                             </section>
                         </div>
-                        <section>
-                            <h3>Map</h3>
+                        <section className={styles.PageSection}>
+                            {/* TODO: Having issues with the map not loading
+                            Also need to look into errors in the console:
+                            Something about the map API being included multiple times */}
+                            {/* <Map /> */}
                         </section>
-                    </main>
+                    </div>
                 </Layout>
             </main>
         </>
