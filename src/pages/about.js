@@ -28,8 +28,8 @@ export default function Home() {
                                     Rogers Wildlife Rehabilitation Center (RWRC) is a 501c3 non-profit wildlife
                                     organization whose purpose is to provide care and rehabilitation to injured, sick
                                     and orphaned birds with the goal of returning them to their natural environment. The
-                                    objective of RWRC's Outdoor Learning Center is to inspire all visitors to conserve
-                                    and protect our native Texas wildlife.
+                                    objective of RWRC&apos;s Outdoor Learning Center is to inspire all visitors to
+                                    conserve and protect our native Texas wildlife.
                                 </p>
                             </div>
                             {/* top paragraph with bird pic */}
