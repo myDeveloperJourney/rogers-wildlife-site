@@ -1,0 +1,77 @@
+.parent_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.inner_container {
+    max-width: 1024px;
+}
+
+.body_top_title {
+    font-size: 50px;
+}
+
+.body_top_parent {
+    margin: 2rem 0;
+}
+
+.body_top_image {
+    float: right;
+    width: 30rem;
+    margin-left: 1rem;
+}
+
+.body_bot_quote {
+    color: #6d3d5e;
+    background-image: url("/images/quotes.png");
+    background-repeat: no-repeat;
+    float: left;
+    width: 14rem;
+    margin: 0 0.5rem 0.5rem 0;
+    font-size: 24px;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .body_top_parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .body_top_image {
+        float: none;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .body_top_image {
+        float: none;
+        margin-bottom: 1rem;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .body_top_image {
+        float: none;
+        margin-bottom: 1rem;
+        width: 100%;
+        margin-left: 0;
+    }
+    .body_bot_parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .body_bot_quote {
+        float: none;
+    }
+}
