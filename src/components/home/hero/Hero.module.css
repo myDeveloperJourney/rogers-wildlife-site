@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1024px;
 }
 
 .text_container {
@@ -23,7 +23,7 @@
 
 .text_inner_container {
     width: 16rem;
-    font-family: 'Papyrus';
+    font-family: "Papyrus";
 }
 
 .text_header {
@@ -48,7 +48,6 @@
     text-align: right;
     width: 100%;
     margin: 1rem 0;
-    padding-right: 0.5rem;
 }
 
 /* @media (max-width: 768px) {
@@ -73,6 +72,9 @@
     }
     .container_inner_parent {
         display: block;
+    }
+    .sub_header_container {
+        padding-right: 0.5rem;
     }
 }
 
