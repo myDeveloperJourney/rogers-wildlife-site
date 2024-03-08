@@ -18,12 +18,10 @@ export default function Footer() {
 
     const links = linkObjs.map((obj) => {
         return (
-            <>
-                <Link key={obj.name} href={obj.path}>
-                    {obj.name}
-                </Link>
+            <span key={obj.name}>
+                <Link href={obj.path}>{obj.name}</Link>
                 {obj.path != "/contact-us" ? " | " : null}
-            </>
+            </span>
         );
     });
 
