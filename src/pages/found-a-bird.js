@@ -28,7 +28,12 @@ export default function Home() {
                                 <h1 className={styles.section_one_title}>Found a Bird?</h1>
                                 <div className={styles.section_one_content_container}>
                                     <div className={`${styles.section_one_image}`}>
-                                        <Image src={"/images/Mr-Chitters-on-log.jpg"} width={400} height={100} />
+                                        <Image
+                                            src={"/images/Mr-Chitters-on-log.jpg"}
+                                            width={400}
+                                            height={100}
+                                            alt="An owl named Mr Chitters sitting on a log"
+                                        />
                                     </div>
                                     <div className={styles.section_one_content}>
                                         <h2>How to Know If a Bird Needs Help</h2>
@@ -85,11 +90,11 @@ export default function Home() {
                                         Keep the box inside the house in a quiet, dark area away from children and pets.
                                     </li>
                                     <li>
-                                        If the bird opens its mouth and begs, you can feed it dry cat or dog food that's
-                                        been soaked in water until it's spongy every time it begs. Wet cat or dog food
-                                        can also be given, but dry food is preferred. Stop feeding it when it stops
-                                        begging or when you can see the food in the back of its throat. They only need
-                                        to be fed during daylight hours.
+                                        If the bird opens its mouth and begs, you can feed it dry cat or dog food
+                                        that&apos;s been soaked in water until it&apos;s spongy every time it begs. Wet
+                                        cat or dog food can also be given, but dry food is preferred. Stop feeding it
+                                        when it stops begging or when you can see the food in the back of its throat.
+                                        They only need to be fed during daylight hours.
                                     </li>
                                     <li>
                                         <strong>DO NOT GIVE THE BIRD WATER</strong> with an eye dropper, as it can very
@@ -118,7 +123,7 @@ export default function Home() {
                                     </li>
                                     <li>
                                         Place the box on a heating pad set on the lowest setting. Diseases and illnesses
-                                        will often lower a bird's body temperature, worsening its condition.
+                                        will often lower a bird&apos;s body temperature, worsening its condition.
                                     </li>
                                     <li>
                                         Keep the box inside the house in a quiet, dark area away from children and pets.
@@ -142,12 +147,12 @@ export default function Home() {
                             </div>
                             {/* Section 3 */}
                             <div className={styles.section_parent_container}>
-                                <h2>Why Can't I Keep It?</h2>
+                                <h2>Why Can&apos;t I Keep It?</h2>
                                 <p>
                                     As much as you and your children may want to keep the bird and as much fun as it may
                                     seem, there are many reasons why we discourage them being kept as pets.
                                 </p>
-                                <h3 className={styles.section_three_subtitle}>It's bad for the animals</h3>
+                                <h3 className={styles.section_three_subtitle}>It&apos;s bad for the animals</h3>
 
                                 <ul className={styles.section_three_list}>
                                     <li>
@@ -162,13 +167,14 @@ export default function Home() {
                                     <li>
                                         If not rehabilitated properly, the bird may become extremely comfortable with
                                         humans, domestic pets, and other situations. These animals may pose a nuisance
-                                        or hazard to humans which can, in turn, easily become a risk to the animals'
-                                        safety as well. They may even become unable to survive on their own if they
-                                        become too reliant on human contact for feeding, shelter, and protection.
+                                        or hazard to humans which can, in turn, easily become a risk to the
+                                        animals&apos; safety as well. They may even become unable to survive on their
+                                        own if they become too reliant on human contact for feeding, shelter, and
+                                        protection.
                                     </li>
                                 </ul>
 
-                                <h3 className={styles.section_three_subtitle}>It's against the law</h3>
+                                <h3 className={styles.section_three_subtitle}>It&apos;s against the law</h3>
 
                                 <ul className={styles.section_three_list}>
                                     <li>
@@ -234,7 +240,12 @@ export default function Home() {
                                 <h2>More Information</h2>
                                 <div className={`${styles.section_five_content}`}>
                                     <div className={`${styles.section_five_image}`}>
-                                        <Image src={"/images/tex.jpg"} width={354} height={100} />
+                                        <Image
+                                            src={"/images/tex.jpg"}
+                                            width={354}
+                                            height={100}
+                                            alt="A logo for texas parks and wildlife"
+                                        />
                                     </div>
                                     <div>
                                         <div>
@@ -266,7 +277,12 @@ export default function Home() {
                                 </div>
                                 <div className={`${styles.section_five_content}`}>
                                     <div className={`${styles.section_five_image}`}>
-                                        <Image src={"/images/usfish.jpg"} width={354} height={100} />
+                                        <Image
+                                            src={"/images/usfish.jpg"}
+                                            width={354}
+                                            height={100}
+                                            alt="A logo for U.S. fish and wildlife service"
+                                        />
                                     </div>
                                     <div>
                                         <p>US Fish & Wildlife Service</p>
@@ -278,7 +294,12 @@ export default function Home() {
                                 </div>
                                 <div className={`${styles.section_five_content}`}>
                                     <div className={`${styles.section_five_image}`}>
-                                        <Image src={"/images/Raptro.jpg"} width={354} height={100} />
+                                        <Image
+                                            src={"/images/Raptro.jpg"}
+                                            width={354}
+                                            height={100}
+                                            alt="A logo for blackland prairie raptor center"
+                                        />
                                     </div>
                                     <div>
                                         <p>Blackland Prairie Raptor Center</p>
