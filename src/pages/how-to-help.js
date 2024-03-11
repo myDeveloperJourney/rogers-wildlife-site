@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
 
+import Image from "next/image";
+
+import styles from "@/styles/pages/Help.module.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,7 +21,344 @@ export default function Home() {
             <main className={`${inter.className}`}>
                 <Hero />
                 <Layout>
-                    <h1>How to Help</h1>
+                    <div className={`${styles.flex_center} ${styles.parent_container}`}>
+                        <div className={styles.inner_container}>
+                            {/* Section 1 */}
+                            <div className={styles.section_container}>
+                                <h2>How to Help</h2>
+                                <h3>Volunteering</h3>
+                                <p className={styles.small_bottom_margin}>
+                                    We always need volunteers and can fully train you to provide care for the birds on
+                                    site. No prior experience is needed. Just print out the volunteer application and
+                                    bring it with you when you would like to volunteer!
+                                </p>
+
+                                <p>What positions do we need help with?</p>
+                                <ul className={styles.list}>
+                                    <li>
+                                        Wild bird clinic staff - caring for injured birds, feeding baby birds, cleaning
+                                        cages.
+                                    </li>
+                                    <li>Administrative support - answering phones, helping with bookkeeping, etc.</li>
+                                    <li>
+                                        Construction help - We are building all the time; construction help is always
+                                        appreciated!
+                                    </li>
+                                    <li>Facility maintenance - repairs, cleaning, etc.</li>
+                                    <li>Outreach program development - public relations, speaking at schools, etc.</li>
+                                </ul>
+                                <p className={styles.small_bottom_margin}>
+                                    Group and individual volunteers are necessary to keep RWRC going. If you feel as
+                                    though you could give a few hours out of a day, week, or month to lend a helping
+                                    hand with a project, PLEASE give us a call!
+                                </p>
+                                <p>We accept community service volunteers as well.</p>
+                                <div className={`${styles.flex_center} ${styles.volunteer_btn_container}`}>
+                                    <a
+                                        href="https://www.rogerswildlife.org/pdfs/RWRC-VOLUNTEER-APP.pdf"
+                                        target="blank"
+                                        className={`${styles.small_right_margin} ${styles.no_margin} ${styles.volunteer_btn}`}
+                                    >
+                                        <button className={styles.section_one_button}>Volunteer Application</button>
+                                    </a>
+
+                                    <a href="pdfs/RWRC-CSR-VOLUNTEER-APP.pdf" target="blank">
+                                        <button className={styles.section_one_button}>
+                                            Community Service Application
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            {/* Section 2 */}
+                            <div className={styles.section_container}>
+                                <h3>Item Donations</h3>
+                                <a>
+                                    <Image />
+                                </a>
+                                <p>
+                                    Our Amazon Wishlist is updated more regularly then the following list, but these are
+                                    items we almost always need. All donations are 501c3 deductible!
+                                </p>
+                                <div className={`${styles.flex} ${styles.flex_column}`}>
+                                    <ul className={`${styles.list} ${styles.small_right_margin} ${styles.no_margin}`}>
+                                        <li>Paper Towels</li>
+                                        <li>Facial tissue (Kleenex)</li>
+                                        <li>Bleach</li>
+                                        <li>Puppy pads</li>
+                                        <li>High-efficiency laundry detergent</li>
+                                        <li>Box Fans</li>
+                                        <li>Asthma type nebulizer</li>
+                                        <li>Heating pads without auto-shutoff</li>
+                                        <li>Heat lamps and bulbs</li>
+                                    </ul>
+                                    <ul className={`${styles.list} ${styles.no_margin}`}>
+                                        <li>Dawn soap</li>
+                                        <li>Broom & mop</li>
+                                        <li>Shovels, rakes, hoes</li>
+                                        <li>Pine shavings</li>
+                                        <li>Trailer of any kind or condition</li>
+                                        <li>Refrigerator</li>
+                                        <li>Extension cords/repair ends</li>
+                                        <li>Electrical supplies</li>
+                                        <li>AA, AAA, D Cell batteries</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            {/* Section 3 */}
+                            <div className={styles.section_container}>
+                                <h3>Monetary Donations</h3>
+                                <p>
+                                    With your help, we can provide food, medical care and safe housing to the thousands
+                                    of sick, injured and orphaned birds we take in yearly. On average, the costs to run
+                                    RWRC $740 per day, that&apos;s just over $22,000 a month! Your donations are hugely
+                                    appreciated as we rely entirely on private donations as we receive no federal, state
+                                    or local government funding.
+                                </p>
+                                <div className={`${styles.flex_center} ${styles.donation_box_container}`}>
+                                    <div
+                                        className={`${styles.donation_box} ${styles.small_right_margin} ${styles.flex_center_nowidth} ${styles.no_margin}`}
+                                    >
+                                        <h4>One-Time Donation</h4>
+                                        <div className={`${styles.paypal_image}`}>
+                                            <Image
+                                                src={"/images/paypal_transparent.svg"}
+                                                width={400}
+                                                height={100}
+                                                alt="An owl named Mr Chitters sitting on a log"
+                                            />
+                                        </div>
+                                        <form
+                                            action="https://www.paypal.com/cgi-bin/webscr"
+                                            method="post"
+                                            target="blank"
+                                        >
+                                            <input type="hidden" name="cmd" value="_s-xclick" />
+                                            <input type="hidden" name="hosted_button_id" value="X4A58SK52T56S" />
+                                            <input
+                                                type="image"
+                                                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                                                name="submit"
+                                                alt="Paypal donation button"
+                                            />
+                                            <Image
+                                                alt=""
+                                                border="0"
+                                                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                                                width="1"
+                                                height="1"
+                                                oxafak8wy=""
+                                            />
+                                        </form>
+                                    </div>
+                                    <div
+                                        className={`${styles.donation_box} ${styles.flex_center_nowidth} ${styles.small_top_margin}`}
+                                    >
+                                        <h4>Reccuring Donation</h4>
+                                        <div className={`${styles.paypal_image}`}>
+                                            <Image
+                                                src={"/images/paypal_transparent.svg"}
+                                                width={400}
+                                                height={100}
+                                                alt="An owl named Mr Chitters sitting on a log"
+                                            />
+                                        </div>
+                                        {/* Donation form with inputs */}
+                                        <form
+                                            action="https://www.paypal.com/cgi-bin/webscr"
+                                            method="post"
+                                            target="blank"
+                                            className={`${styles.donation_box_form}`}
+                                        >
+                                            <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+                                            <input type="hidden" name="business" value="SFVKHLKF3LHZG" />
+                                            <input type="hidden" name="lc" value="US" />
+                                            <input
+                                                type="hidden"
+                                                name="item_name"
+                                                value="Recurring Donation to Rogers Wildlife"
+                                            />
+                                            <input type="hidden" name="no_note" value="1" />
+                                            <input type="hidden" name="no_shipping" value="2" />
+                                            <input type="hidden" name="src" value="1" />
+                                            <input type="hidden" name="p3" value="1" />
+                                            <input type="hidden" name="currency_code" value="USD" />
+                                            <input
+                                                type="hidden"
+                                                name="bn"
+                                                value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted"
+                                            />
+
+                                            <table width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input
+                                                                type="hidden"
+                                                                name="on0"
+                                                                value="Donation Frequency"
+                                                            />
+                                                            Donation Frequency
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <select name="t3" className={styles.donation_box_input}>
+                                                                <option value="M">Monthly </option>
+                                                                <option value="Y">Yearly </option>
+                                                            </select>{" "}
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>How many times would you like this to recur?</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <select name="srt" className={styles.donation_box_input}>
+                                                                <option value="0">Never Ending</option>
+                                                                <option value="6">6 times</option>
+                                                                <option value="12">12 times</option>
+                                                            </select>{" "}
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Enter Your Donation Amount</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            $
+                                                            <input
+                                                                type="text"
+                                                                name="a3"
+                                                                maxLength="60"
+                                                                className={styles.donation_box_input}
+                                                            />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <input
+                                                type="image"
+                                                src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif"
+                                                name="submit"
+                                                alt="PayPal - The safer, easier way to pay online!"
+                                            />
+                                            <Image
+                                                alt=""
+                                                border="0"
+                                                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                                                width="1"
+                                                height="1"
+                                                af4no2xxg=""
+                                            />
+                                        </form>
+                                        {/* End Donation form with inputs */}
+                                    </div>
+                                </div>
+                                <p>Or donate via JustGive by clicking on the button below!</p>
+                                <a href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276" target="_blank">
+                                    <Image
+                                        alt="Donate using JustGive"
+                                        src={"/images/donate.jpg"}
+                                        width="120"
+                                        height="40"
+                                    />
+                                </a>
+                                <p className={styles.small_top_margin}>
+                                    <a href="https://account.venmo.com/u/Rogers-Wildlife" className={`${styles.link}`}>
+                                        Venmo Account
+                                    </a>{" "}
+                                    The account is @Rogers Wildlife Rehabilitation Center
+                                </p>
+                                <a>
+                                    <Image />
+                                </a>
+                            </div>
+                            {/* Section 4 */}
+                            <div className={styles.section_container}>
+                                <h3>Show Your RWRC Love!</h3>
+                                <h4>Cafepress</h4>
+                                <p>
+                                    <a href="https://www.cafepress.com/rogerswildlife" className={`${styles.link}`}>
+                                        Cafepress
+                                    </a>{" "}
+                                    Shop for Rogers custom bird content at CafePress. The proceeds go towards helping us
+                                    provide medical care and treatment to the thousands of birds we take in every year.
+                                </p>
+                                <div className={`${styles.flex_center} ${styles.flex_column}`}>
+                                    <a
+                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
+                                        target="_blank"
+                                    >
+                                        <div className={`${styles.justgive_btn}`}>
+                                            <Image
+                                                alt="Donate using JustGive"
+                                                src={"/images/bag.jpg"}
+                                                width="290"
+                                                height="40"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
+                                        target="_blank"
+                                    >
+                                        <div className={`${styles.justgive_btn}`}>
+                                            <Image
+                                                alt="Donate using JustGive"
+                                                src={"/images/tshirt.jpg"}
+                                                width="300"
+                                                height="40"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
+                                        target="_blank"
+                                    >
+                                        <div className={`${styles.justgive_btn}`}>
+                                            <Image
+                                                alt="Donate using JustGive"
+                                                src={"/images/mug.jpg"}
+                                                width="290"
+                                                height="40"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                                <h3>Other ways to help</h3>
+                                <div className={`${styles.flex} ${styles.flex_column}`}>
+                                    <a
+                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
+                                        target="_blank"
+                                    >
+                                        <div className={`${styles.ways_to_help}`}>
+                                            <Image
+                                                alt="Donate using JustGive"
+                                                src={"/images/amazonsmile.jpg"}
+                                                width="163"
+                                                height="40"
+                                            />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
+                                        target="_blank"
+                                    >
+                                        <div>
+                                            <Image
+                                                alt="Donate using JustGive"
+                                                src={"/images/kroger.png"}
+                                                width="163"
+                                                height="40"
+                                            />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Layout>
             </main>
         </>

@@ -1,0 +1,133 @@
+.parent_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.inner_container {
+    max-width: 1024px;
+}
+
+.link {
+    color: #71993c;
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.section_parent_container {
+    padding: 1rem 0;
+}
+
+.section_parent_container > ul {
+    padding-left: 2rem;
+    list-style: disc;
+    margin: 0.5rem 0;
+}
+
+.section_parent_container > h2 {
+    font-size: 35px;
+    color: #578122;
+}
+
+.section_parent_container > h3 {
+    font-size: 25px;
+    color: #8bd326;
+}
+
+/* section one css */
+
+.section_one_title {
+    font-size: 50px;
+    color: black;
+}
+
+.section_three_list {
+    padding-left: 2rem;
+    list-style: disc;
+    margin: 0.5rem 0;
+}
+
+.section_one_content > h2 {
+    font-size: 35px;
+    color: #578122;
+}
+
+.section_one_List {
+    padding-left: 2rem;
+    list-style: disc;
+    margin: 0.5rem 0;
+}
+
+.section_one_image {
+    float: right;
+    width: 354px;
+    margin-left: 0.5rem;
+}
+
+/* Section three */
+
+.section_three_subtitle {
+    margin: 0.5rem 0 0 0;
+}
+
+/* Section five  */
+
+.section_five_content {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.section_five_text {
+    margin: 1rem 0;
+}
+
+.section_five_image {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .section_one_content_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .section_one_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: none;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .parent_container {
+        padding: 0 0.5rem;
+    }
+    .section_one_image {
+        float: none;
+        width: 100%;
+    }
+    .section_parent_container > h2 {
+        font-size: 25px;
+        color: #578122;
+    }
+    .section_one_content > h2 {
+        font-size: 25px;
+        color: #578122;
+    }
+    .section_five_content {
+        flex-direction: column;
+    }
+    .section_five_image {
+        margin-bottom: 0.5rem;
+    }
+}
