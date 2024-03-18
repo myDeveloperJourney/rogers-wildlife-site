@@ -3,14 +3,14 @@ import Link from "next/link";
 
 const navitemStyles = {
     height: "6rem",
-    fontSize: "8vmin",
+    fontSize: "7vmin",
     textTransform: "uppercase",
     padding: "1.5rem",
     fontWeight: "bold",
     letterSpacing: "0.5rem",
     textDecoration: "none",
     transition: "color 0.80s linear",
-    color: "var(--background)",
+    color: "#000",
     cursor: "pointer",
     fontFamily: "var(--font-sans)",
 };
@@ -19,6 +19,22 @@ const links = [
     {
         slug: "/",
         text: "Home",
+    },
+    {
+        slug: "/about",
+        text: "About",
+    },
+    {
+        slug: "/found-a-bird",
+        text: "Found a Bird",
+    },
+    {
+        slug: "/how-to-help",
+        text: "How to Help",
+    },
+    {
+        slug: "/contact-us",
+        text: "Contact Us",
     },
 ];
 

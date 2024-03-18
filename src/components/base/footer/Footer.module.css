@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     flex-direction: column;
+    margin: 2rem 0 0 0;
 }
 
 .parent_container a {
@@ -12,9 +13,10 @@
 }
 
 .socials_container {
-    width: 15rem;
+    width: 7rem;
     display: flex;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 .footer {
@@ -33,13 +35,16 @@
     }
 }
 
-@media (max-width: 425px) {
-    .footer {
-        font-size: 9px;
-    }
+@media (max-width: 480px) {
     .footer_contact {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        font-size: 9px;
     }
 }

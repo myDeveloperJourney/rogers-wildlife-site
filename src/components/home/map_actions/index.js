@@ -8,14 +8,14 @@ export default function MapContainer() {
         <div className={styles.parent_container}>
             <div className={styles.inner_container}>
                 <div className={styles.actions_container}>
-                    <a>
-                        <Image src="/tiktok.svg" height={150} width={150} alt="social media image" />
+                    <a className={styles.margin_bottom} href="/how-to-help">
+                        <Image src="/btn-volunteer.svg" height={100} width={100} alt="volunteer image link" />
                     </a>
-                    <a>
-                        <Image src="/tiktok.svg" height={150} width={150} alt="social media image" />
+                    <a className={styles.margin_bottom} href="/how-to-help">
+                        <Image src="/btn-donate.svg" height={100} width={100} alt="donation image link" />
                     </a>
-                    <a>
-                        <Image src="/tiktok.svg" height={150} width={150} alt="social media image" />
+                    <a href="/contact-us">
+                        <Image src="/btn-contact.svg" height={100} width={100} alt="contact image link" />
                     </a>
                 </div>
                 <Map />

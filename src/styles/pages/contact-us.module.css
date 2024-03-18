@@ -26,13 +26,39 @@
 
 .LineBreak {
     display: block;
-    margin-top: .25rem;
+    margin-top: 0.25rem;
     font-weight: 700;
-    margin-bottom: .15rem;
+    margin-bottom: 0.15rem;
+}
+
+.map_section {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.location_info {
+    width: 30rem;
 }
 
 @media (min-width: 768px) {
     .PageContainer {
         display: flex;
+    }
+}
+
+@media (max-width: 810px) {
+    .PageContainer {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .map_section {
+        display: flex;
+        flex-direction: column;
+    }
+    .location_info {
+        margin-top: 1rem;
+        width: 100%;
     }
 }

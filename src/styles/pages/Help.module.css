@@ -140,6 +140,11 @@
     .volunteer_btn {
         margin: 1rem 0;
     }
+    .venmo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 375px) {
