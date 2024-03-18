@@ -5,7 +5,7 @@ const Map = () => {
         const initMap = () => {
             const latLng = { lat: 32.66205250675709, lng: -96.69205191446851 };
 
-            const map = new google.maps.Map(document.getElementById('map'), {
+            const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 7.8,
                 center: latLng,
             });
@@ -33,10 +33,10 @@ const Map = () => {
             });
         };
 
-        if (typeof window !== 'undefined' && typeof window.google !== 'undefined') {
+        if (typeof window !== "undefined" && typeof window.google !== "undefined") {
             initMap();
         } else {
-            const script = document.createElement('script');
+            const script = document.createElement("script");
             script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBAodzkDuixpYMyM080XalJSpPZwPmcbRA&callback=initMap`;
             script.async = true;
             script.defer = true;
@@ -45,7 +45,7 @@ const Map = () => {
         }
     }, []);
 
-    return <div id="map" style={{ height: '400px', width: '100%' }} />;
-}
+    return <div id="map" style={{ height: "300px", width: "100%" }} />;
+};
 
 export default Map;

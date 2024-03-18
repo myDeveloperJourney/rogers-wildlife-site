@@ -10,7 +10,7 @@ export default function Footer() {
         // { name: "In the News", path: "/" },
         { name: "Found a Bird?", path: "/found-a-bird" },
         { name: "How to Help", path: "/how-to-help" },
-        { name: "Photo Gallery", path: "/see-our-birds" },
+        // { name: "Photo Gallery", path: "/see-our-birds" },
         // NOTE: Not sure if we need this right now
         // { name: "Educational Birds", path: "/" },
         { name: "Contact Us", path: "/contact-us" },
@@ -28,14 +28,14 @@ export default function Footer() {
     return (
         <div className={styles.parent_container}>
             <div className={styles.socials_container}>
-                <a>
-                    <Image src="/tiktok.svg" height={150} width={150} alt="social media image" />
+                <a href="https://www.facebook.com/rogerswildlife/" target="_blank">
+                    <Image src="/facebook.svg" height={33} width={33} alt="social media image" />
                 </a>
-                <a>
-                    <Image src="/tiktok.svg" height={150} width={150} alt="social media image" />
+                <a href="https://www.instagram.com/rogerswildlife/" target="_blank">
+                    <Image src="/instagram.svg" height={33} width={33} alt="social media image" />
                 </a>
-                <a>
-                    <Image src="/tiktok.svg" height={150} width={150} alt="social media image" />
+                <a href="https://www.pinterest.com/rogerswildlife/" target="_blank">
+                    <Image src="/pinterest.svg" height={33} width={33} alt="social media image" />
                 </a>
             </div>
             <footer className={styles.footer}>

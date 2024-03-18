@@ -7,14 +7,22 @@ export default function Title() {
         <div className={styles.parent_container}>
             <div className={styles.inner_container}>
                 <div className={styles.socials_container}>
-                    <a>
-                        <Image src="/tiktok.svg" height={100} width={100} alt="social media image" />
+                    <a
+                        className={`${styles.margin_right}`}
+                        href="https://www.facebook.com/rogerswildlife/"
+                        target="_blank"
+                    >
+                        <Image src="/facebook.svg" height={44} width={44} alt="facebook social media link" />
                     </a>
-                    <a>
-                        <Image src="/tiktok.svg" height={100} width={100} alt="social media image" />
+                    <a
+                        className={`${styles.margin_right}`}
+                        href="https://www.instagram.com/rogerswildlife/"
+                        target="_blank"
+                    >
+                        <Image src="/instagram.svg" height={44} width={44} alt="instagram social media link" />
                     </a>
-                    <a>
-                        <Image src="/tiktok.svg" height={100} width={100} alt="social media image" />
+                    <a href="https://www.pinterest.com/rogerswildlife/" target="_blank">
+                        <Image src="/pinterest.svg" height={44} width={44} alt="pinterest social media link" />
                     </a>
                 </div>
                 <div className={styles.title_container}>

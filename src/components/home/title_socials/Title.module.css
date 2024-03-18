@@ -1,3 +1,7 @@
+.margin_right {
+    margin-right: 0.5rem;
+}
+
 .parent_container {
     display: flex;
     align-items: center;
@@ -11,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 10rem;
     max-width: 1024px;
     margin: 0 2rem;
 }
@@ -18,7 +23,10 @@
 .socials_container {
     width: max-content;
     display: flex;
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    width: 10rem;
+    height: 100%;
+    margin-top: 2rem;
 }
 
 .title_container {

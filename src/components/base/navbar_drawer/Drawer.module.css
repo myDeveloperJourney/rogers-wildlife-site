@@ -25,21 +25,16 @@
 
 .div_parent {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #000000;
-    height: 80rem;
-    opacity: 1;
-    transition: opacity 1s ease;
-    transition-delay: 0s;
-}
-
-.div_parent > ul {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: #ffffff;
+    height: max-content;
+    opacity: 1;
+    transition: opacity 1s ease;
+    transition-delay: 0s;
+    padding: 1rem 0;
 }
 
 .link {

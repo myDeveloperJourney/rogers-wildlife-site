@@ -6,6 +6,7 @@ import Hero from "@/components/home/hero";
 import Image from "next/image";
 
 import styles from "@/styles/pages/Help.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,13 +55,13 @@ export default function Home() {
                                 </p>
                                 <p>We accept community service volunteers as well.</p>
                                 <div className={`${styles.flex_center} ${styles.volunteer_btn_container}`}>
-                                    <a
-                                        href="https://www.rogerswildlife.org/pdfs/RWRC-VOLUNTEER-APP.pdf"
+                                    <Link
+                                        href="/volunteer"
                                         target="blank"
                                         className={`${styles.small_right_margin} ${styles.no_margin} ${styles.volunteer_btn}`}
                                     >
                                         <button className={styles.section_one_button}>Volunteer Application</button>
-                                    </a>
+                                    </Link>
 
                                     <a href="pdfs/RWRC-CSR-VOLUNTEER-APP.pdf" target="blank">
                                         <button className={styles.section_one_button}>
@@ -266,31 +267,38 @@ export default function Home() {
                                     />
                                 </a>
                                 <p className={styles.small_top_margin}>
-                                    <a href="https://account.venmo.com/u/Rogers-Wildlife" className={`${styles.link}`}>
+                                    <a
+                                        href="https://account.venmo.com/u/Rogers-Wildlife"
+                                        target="_blank"
+                                        className={`${styles.link}`}
+                                    >
                                         Venmo Account
                                     </a>{" "}
                                     The account is @Rogers Wildlife Rehabilitation Center
                                 </p>
-                                <a>
-                                    <Image />
-                                </a>
+                                <div className={styles.venmo}>
+                                    <a href="https://account.venmo.com/u/Rogers-Wildlife" target="_blank">
+                                        <Image src={"/images/venmo.jpeg"} width={290} height={1000} />
+                                    </a>
+                                </div>
                             </div>
                             {/* Section 4 */}
                             <div className={styles.section_container}>
                                 <h3>Show Your RWRC Love!</h3>
                                 <h4>Cafepress</h4>
                                 <p>
-                                    <a href="https://www.cafepress.com/rogerswildlife" className={`${styles.link}`}>
+                                    <a
+                                        href="https://www.cafepress.com/rogerswildlife"
+                                        target="_blank"
+                                        className={`${styles.link}`}
+                                    >
                                         Cafepress
                                     </a>{" "}
                                     Shop for Rogers custom bird content at CafePress. The proceeds go towards helping us
                                     provide medical care and treatment to the thousands of birds we take in every year.
                                 </p>
                                 <div className={`${styles.flex_center} ${styles.flex_column}`}>
-                                    <a
-                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
-                                        target="_blank"
-                                    >
+                                    <a href="https://www.cafepress.com/rogerswildlife" target="_blank">
                                         <div className={`${styles.justgive_btn}`}>
                                             <Image
                                                 alt="Donate using JustGive"
@@ -300,10 +308,7 @@ export default function Home() {
                                             />
                                         </div>
                                     </a>
-                                    <a
-                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
-                                        target="_blank"
-                                    >
+                                    <a href="https://www.cafepress.com/rogerswildlife" target="_blank">
                                         <div className={`${styles.justgive_btn}`}>
                                             <Image
                                                 alt="Donate using JustGive"
@@ -313,10 +318,7 @@ export default function Home() {
                                             />
                                         </div>
                                     </a>
-                                    <a
-                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
-                                        target="_blank"
-                                    >
+                                    <a href="https://www.cafepress.com/rogerswildlife" target="_blank">
                                         <div className={`${styles.justgive_btn}`}>
                                             <Image
                                                 alt="Donate using JustGive"
@@ -330,7 +332,7 @@ export default function Home() {
                                 <h3>Other ways to help</h3>
                                 <div className={`${styles.flex} ${styles.flex_column}`}>
                                     <a
-                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
+                                        href="https://www.amazon.com/registry/wishlist/2G7903YCKJDNU/ref=cm_sw_r_cp_an_wl_o_XrfAxbBQ4G2D3"
                                         target="_blank"
                                     >
                                         <div className={`${styles.ways_to_help}`}>
@@ -343,7 +345,7 @@ export default function Home() {
                                         </div>
                                     </a>
                                     <a
-                                        href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276"
+                                        href="https://www.rogerswildlife.org/pdfs/kroger-donations-program.pdf"
                                         target="_blank"
                                     >
                                         <div>

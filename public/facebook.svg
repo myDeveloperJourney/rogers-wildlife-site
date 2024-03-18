@@ -1,0 +1,9 @@
+<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect id="facebook-medium" y="0.5" width="44" height="44" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_441_8" transform="scale(0.0227273)"/>
+</pattern>
+<image id="image0_441_8" data-name="facebook-medium.png" width="44" height="44" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeBJREFUeNpi/P//PwMu4Fu+XwFIGUAxPcAHIL6wudPxAC4FjNgcDHSoA5BqAGJ7hoEBH4F4AggDHf8Br4OBjgUpzGcYHADkcAegoy9gdTDQsSAJfYbBBwKBjt4AYjChhexgdCwILAC6zwDuYGiazWcYvIAfmqbhIdzAMPiBPShgmc9+twcVXf0MQwMwMtGxjKUGMBhqDtZnoZXJ3JwsDBbaIgzigpwo4ieuvma49+wL2ebSxMHOJhIMqb6qDNwc2I0fVA4GObYgVJNmaYKJ2gaCQpaWgKohrKskgDUZXLmHaL+8fP998DgYG5iz+Q7DxiOPB2+SwMxgnwd3GqY1GHIOpjgNA9upeOXb0g1R+FUzzzNcvvdhNEnQLhM+/zK0HPz1+5+BTcPL9zxAqTh0gBgZ7D37guHV+x9UqTSo4uBlu+/D2VGuipgOPvOcokw2mulGHTzq4FEHjzp41MGDp4sEqvWQaz5ahfCHIRTAH0EOvjCEHHyBCToB8nGIOHgDLNNNGArJAYgXIDv44SB3MHhGCT4pA51DOD9IHbsR6NgAlHIYOrUUOAjT80YgToBxsM3TKYDSCsPATSoip1lQMmhAFmTENXULnVkC+QyUVPTp6EhQTIPm5Bagz4KCAECAAQDXZJ6izlc5MAAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

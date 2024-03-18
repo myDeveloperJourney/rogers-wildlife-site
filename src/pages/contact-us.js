@@ -4,6 +4,7 @@ import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
 // import Map from "@/components/ui/map";
 import styles from "@/styles/pages/contact-us.module.css";
+import Map from "@/components/ui/map";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,16 +23,24 @@ export default function Home() {
                     <div className={styles.PageContainer}>
                         <div>
                             <h1>Contact Us</h1>
-                            <section className={styles.PageSection}>
-                                <h2>Location</h2>
-                                <address>
-                                    <p>Rogers Wildlife Rehabilitation Center</p>
-                                    <p>1430 E. Cleveland Rd.</p>
-                                    <p>Hutchins, TX 75141</p>
-                                </address>
-                                <p><strong>Phone</strong>: <a href="tel:972-225-4000">972-225-4000</a></p>
-                                <p><strong>Email for general Inquires</strong>: <a href="mailto:contact@rogerswildlife.org">contact@rogerswildlife.org</a></p>
-                                <div>Social Icons</div>
+                            <section className={`${styles.PageSection} ${styles.map_section}`}>
+                                <Map />
+                                <div className={styles.location_info}>
+                                    <h2>Location</h2>
+                                    <address>
+                                        <p>Rogers Wildlife Rehabilitation Center</p>
+                                        <p>1430 E. Cleveland Rd.</p>
+                                        <p>Hutchins, TX 75141</p>
+                                    </address>
+                                    <p>
+                                        <strong>Phone</strong>: <a href="tel:972-225-4000">972-225-4000</a>
+                                    </p>
+                                    <p>
+                                        <strong>Email for general Inquires</strong>:{" "}
+                                        <a href="mailto:contact@rogerswildlife.org">contact@rogerswildlife.org</a>
+                                    </p>
+                                    <div>Social Icons</div>
+                                </div>
                             </section>
                             <section className={styles.PageSection}>
                                 <h2>Hours</h2>
@@ -40,13 +49,16 @@ export default function Home() {
                                     <span className={styles.LineBreak}>Fall Hours: 9am - 4pm</span>
                                     <span className={styles.LineBreak}>Starting Sept. 1 - Every day</span>
                                     <span className={styles.LineBreak}>Summer Hours: 10am - 4pm</span>
-                                    <span className={styles.LineBreak}>Due to the corona virus situation we are open for bird drop offs between 10-4 every day.</span>
-                                    
-                                    This is our busy season, and we do our best to answer every call, 
-                                    but due to the heavy call volume and calls coming in back to back, 
-                                    you may have to call a couple of times.<br /> 
-                                    Please be patient... 
-                                    we are all volunteers and doing the best we can with the volume of birds and calls coming in. 
+                                    <span className={styles.LineBreak}>
+                                        Due to the corona virus situation we are open for bird drop offs between 10-4
+                                        every day.
+                                    </span>
+                                    This is our busy season, and we do our best to answer every call, but due to the
+                                    heavy call volume and calls coming in back to back, you may have to call a couple of
+                                    times.
+                                    <br />
+                                    Please be patient... we are all volunteers and doing the best we can with the volume
+                                    of birds and calls coming in.
                                 </p>
                             </section>
                             <section className={styles.PageSection}>
@@ -56,15 +68,26 @@ export default function Home() {
                                     <li>Take exit 274 at Dowdy Ferry Road/Hutchins just South of I-20.</li>
                                     <li>Go left under I-45 and left again on the North bound service road.</li>
                                     <li>Turn right onto E. Cleveland Road, go one mile and we will be on the left.</li>
-                                    <li>Rogers Wildlife is located on the left side of Cleveland Road, just before you get to the Republic Services.</li>
+                                    <li>
+                                        Rogers Wildlife is located on the left side of Cleveland Road, just before you
+                                        get to the Republic Services.
+                                    </li>
                                 </ol>
                             </section>
                             <section className={styles.PageSection}>
                                 <h2>Far Away? Find Someone Closer</h2>
                                 <ul>
-                                    <li><a href="http://tpwd.texas.gov/huntwild/wild/rehab/list/" target="_blank">List of Texas Wildlife Rehabilitators by County</a> (Make sure to check surrounding counties too!)</li>
+                                    <li>
+                                        <a href="http://tpwd.texas.gov/huntwild/wild/rehab/list/" target="_blank">
+                                            List of Texas Wildlife Rehabilitators by County
+                                        </a>{" "}
+                                        (Make sure to check surrounding counties too!)
+                                    </li>
                                     <li>Call the DFW Wildlife Coalition at 972-234-9453</li>
-                                    <li>Not in Texas? Contact your local animal control or parks and wildlife department for more information.</li>
+                                    <li>
+                                        Not in Texas? Contact your local animal control or parks and wildlife department
+                                        for more information.
+                                    </li>
                                 </ul>
                             </section>
                         </div>
