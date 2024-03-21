@@ -12,9 +12,7 @@ export default function Burger({ isNavOpen, setNavOpen }) {
                 id={styles.mobile_button}
                 onClick={handleClick}
             >
-                <span></span>
-                <span></span>
-                <span></span>
+                {isNavOpen ? <p>Close</p> : <p>Menu</p>}
             </button>
         </nav>
     );

@@ -5,10 +5,12 @@
 }
 
 #mobile_button {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 6px;
     width: 5rem;
     height: 3rem;
     align-items: center;
@@ -17,29 +19,11 @@
     background-color: transparent;
 }
 
-#mobile_button > span {
-    width: 3.5rem;
-    height: 5px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20rem;
+.clickedButton {
+    position: fixed;
+    top: 0.2rem;
+    right: 0.5rem;
     transition: transform 0.3s ease-in-out, opacity 1s ease-in-out, background-color 1s ease-in-out;
-}
-
-.clickedButton span:nth-child(1) {
-    transform: translate3d(0, 15px, 0) rotate(45deg);
-}
-
-.clickedButton > span:nth-child(2) {
-    transform: scaleX(0);
-    opacity: 0;
-}
-
-.clickedButton > span:nth-child(3) {
-    transform: translate3d(0, -7px, 0) rotate(-45deg);
-}
-
-.clickedButton > span {
-    background-color: #000000 !important;
 }
 
 @media (min-width: 769px) {
@@ -48,6 +32,9 @@
     }
 }
 @media (max-width: 768px) {
+    #mobile_button {
+        position: none;
+    }
     .mobile_nav {
         display: flex;
     }
