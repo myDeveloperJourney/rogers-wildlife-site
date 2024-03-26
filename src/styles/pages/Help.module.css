@@ -72,6 +72,11 @@
     border-radius: 15px;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: #825775;
+    color: #ffffff;
+}
+
+.volunteer_btn_container {
+    margin-top: 1.5rem;
 }
 
 /* Section three */
@@ -91,7 +96,7 @@
 .donation_box {
     height: 325px;
     width: 350px;
-    background-color: #f3fbe9;
+    /* background-color: #f3fbe9; */
     border-radius: 10px;
 }
 
