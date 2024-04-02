@@ -4,10 +4,10 @@
     z-index: 3;
 }
 
-#mobile_button {
-    color: black;
+.mobile_button {
+    color: white;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 500;
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,14 @@
     height: 3rem;
     align-items: center;
     justify-content: center;
-    border: 2px solid #808080;
+    border: 2px solid white;
     border-radius: 5px;
     background-color: transparent;
+}
+
+.close_button {
+    color: black;
+    border: 2px solid black;
 }
 
 .clickedButton {
