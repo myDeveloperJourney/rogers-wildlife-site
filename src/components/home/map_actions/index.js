@@ -10,13 +10,13 @@ export default function MapContainer() {
             <div className={styles.inner_container}>
                 <div className={styles.actions_container}>
                     <Link className={styles.margin_bottom} href="/how-to-help">
-                        <Image src="/btn-volunteer.svg" height={100} width={100} alt="volunteer image link" />
+                        <Image src="/volunteerVector.svg" height={100} width={100} alt="volunteer image link" />
                     </Link>
                     <Link className={styles.margin_bottom} href="/how-to-help">
-                        <Image src="/btn-donate.svg" height={100} width={100} alt="donation image link" />
+                        <Image src="/donateVector.svg" height={100} width={100} alt="donation image link" />
                     </Link>
                     <Link href="/contact-us">
-                        <Image src="/btn-contact.svg" height={100} width={100} alt="contact image link" />
+                        <Image src="/contactVector.svg" height={100} width={100} alt="contact image link" />
                     </Link>
                 </div>
                 <Map />
