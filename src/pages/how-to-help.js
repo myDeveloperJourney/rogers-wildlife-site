@@ -151,9 +151,7 @@ export default function Home() {
                                             />
                                         </form>
                                     </div>
-                                    <div
-                                        className={`${styles.donation_box} ${styles.flex_center_nowidth} ${styles.small_top_margin}`}
-                                    >
+                                    <div className={`${styles.donation_box} ${styles.flex_center_nowidth} `}>
                                         <h4>Reccuring Donation</h4>
                                         <div className={`${styles.paypal_image}`}>
                                             <Image

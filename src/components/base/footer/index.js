@@ -29,13 +29,13 @@ export default function Footer() {
         <div className={styles.parent_container}>
             <div className={styles.socials_container}>
                 <a href="https://www.facebook.com/rogerswildlife/" target="_blank">
-                    <Image src="/facebook.svg" height={33} width={33} alt="social media image" />
+                    <Image src="/facebookVector.svg" height={33} width={33} alt="social media image" />
                 </a>
                 <a href="https://www.instagram.com/rogerswildlife/" target="_blank">
-                    <Image src="/instagram.svg" height={33} width={33} alt="social media image" />
+                    <Image src="/instagramVector.svg" height={33} width={33} alt="social media image" />
                 </a>
                 <a href="https://www.pinterest.com/rogerswildlife/" target="_blank">
-                    <Image src="/pinterest.svg" height={33} width={33} alt="social media image" />
+                    <Image src="/pinterestVector.svg" height={33} width={33} alt="social media image" />
                 </a>
             </div>
             <footer className={styles.footer}>

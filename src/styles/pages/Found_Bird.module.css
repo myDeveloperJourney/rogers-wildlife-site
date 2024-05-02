@@ -11,7 +11,7 @@
 }
 
 .link {
-    color: #71993c;
+    color: var(--primary);
     text-decoration: underline;
 }
 
@@ -31,19 +31,17 @@
 
 .section_parent_container > h2 {
     font-size: 35px;
-    color: #578122;
+    color: var(--primary);
 }
 
 .section_parent_container > h3 {
     font-size: 25px;
-    color: #8bd326;
 }
 
 /* section one css */
 
 .section_one_title {
     font-size: 50px;
-    color: black;
 }
 
 .section_three_list {
@@ -54,7 +52,7 @@
 
 .section_one_content > h2 {
     font-size: 35px;
-    color: #578122;
+    color: var(--primary);
 }
 
 .section_one_List {
@@ -118,11 +116,11 @@
     }
     .section_parent_container > h2 {
         font-size: 25px;
-        color: #578122;
+        color: var(--primary);
     }
     .section_one_content > h2 {
         font-size: 25px;
-        color: #578122;
+        color: var(--primary);
     }
     .section_five_content {
         flex-direction: column;

@@ -12,17 +12,17 @@ export default function Title() {
                         href="https://www.facebook.com/rogerswildlife/"
                         target="_blank"
                     >
-                        <Image src="/facebook.svg" height={44} width={44} alt="facebook social media link" />
+                        <Image src="/facebookVector.svg" height={44} width={44} alt="facebook social media link" />
                     </a>
                     <a
                         className={`${styles.margin_right}`}
                         href="https://www.instagram.com/rogerswildlife/"
                         target="_blank"
                     >
-                        <Image src="/instagram.svg" height={44} width={44} alt="instagram social media link" />
+                        <Image src="/instagramVector.svg" height={44} width={44} alt="instagram social media link" />
                     </a>
                     <a href="https://www.pinterest.com/rogerswildlife/" target="_blank">
-                        <Image src="/pinterest.svg" height={44} width={44} alt="pinterest social media link" />
+                        <Image src="/pinterestVector.svg" height={44} width={44} alt="pinterest social media link" />
                     </a>
                 </div>
                 <div className={styles.title_container}>

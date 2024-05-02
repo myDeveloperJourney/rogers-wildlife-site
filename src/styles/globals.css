@@ -2,10 +2,14 @@
     --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
         "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     --background: #fcfcfd;
+    --primary: #355e3b;
+    --secondary: #d1d1d1;
+    --accent: #484848;
+    --text: #333333;
 }
 
 @font-face {
-    font-family: 'Papyrus';
+    font-family: "Papyrus";
     src: url("/fonts/papyrus.ttf") format("truetype");
 }
 /* @media (prefers-color-scheme: dark) {
@@ -45,7 +49,7 @@ body {
     text-rendering: optimizeSpeed;
     font-family: Arial, sans-serif; /* or any default font you prefer */
     font-size: 16px; /* or whatever base size you prefer */
-    color: black;
+    color: var(--text);
     line-height: 1.5;
     background-color: #fcfcfd;
 }

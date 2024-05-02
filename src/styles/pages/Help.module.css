@@ -52,16 +52,15 @@
 
 .section_container > h3 {
     font-size: 35px;
-    color: #578122;
+    color: var(--primary);
 }
 
 .section_container > h4 {
     font-size: 25px;
-    color: #8bd326;
 }
 
 .link {
-    color: #71993c;
+    color: var(--primary);
     text-decoration: underline;
 }
 
@@ -71,7 +70,7 @@
     border: none;
     border-radius: 15px;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #825775;
+    background-color: var(--primary);
 }
 
 /* Section three */
@@ -91,7 +90,7 @@
 .donation_box {
     height: 325px;
     width: 350px;
-    background-color: #f3fbe9;
+    background-color: var(--secondary);
     border-radius: 10px;
 }
 
@@ -101,7 +100,6 @@
 
 .donation_box_input {
     background-color: #ffffff;
-    color: black;
     border: 1px solid black;
 }
 
@@ -109,7 +107,6 @@
     border-radius: 20px;
     border: none;
     background-color: rgb(245, 224, 35);
-    color: black;
     font-weight: bold;
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
@@ -161,7 +158,7 @@
     }
     .section_container > h3 {
         font-size: 25px;
-        color: #578122;
+        color: var(--primary);
     }
     .flex_column {
         flex-direction: column;

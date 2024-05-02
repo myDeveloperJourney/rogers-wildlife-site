@@ -4,7 +4,7 @@
     align-items: center;
     height: 4rem;
     padding: 1rem;
-    background-color: #d6d6d6;
+    background-color: var(--secondary);
     border-bottom: 5px solid var(--primary);
     z-index: 3;
 }
@@ -20,7 +20,6 @@
 
 .desktop_nav > li {
     font-family: var(--font-sans);
-    color: black;
     word-wrap: normal;
     text-shadow: 3px 7px 21px var(--secondary);
 }

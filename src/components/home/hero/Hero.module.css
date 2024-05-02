@@ -1,5 +1,4 @@
 .container_parent {
-    color: black;
     height: max-content;
     width: 100%;
 }
@@ -28,7 +27,6 @@
 
 .text_header {
     font-size: 38px;
-    color: #000;
     font-weight: bold;
 }
 
