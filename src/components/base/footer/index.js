@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "@/components/base/footer/Footer.module.css";
 import { SocialIcon } from "@/components/ui/social-icons";
