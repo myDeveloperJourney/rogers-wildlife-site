@@ -1,4 +1,5 @@
 .container_parent {
+    color: white;
     height: max-content;
     width: 100%;
     background-image: url("/images/baldeagle.png");
@@ -30,6 +31,7 @@
 
 .text_header {
     font-size: 38px;
+    color: var(--header-text);
     font-weight: bold;
 }
 
