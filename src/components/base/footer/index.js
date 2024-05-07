@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import styles from "@/components/base/footer/Footer.module.css";
 import { SocialIcon } from "@/components/ui/social-icons";
@@ -29,15 +29,9 @@ export default function Footer() {
     return (
         <div className={styles.parent_container}>
             <div className={styles.socials_container}>
-                <a href="https://www.facebook.com/rogerswildlife/" target="_blank">
-                    <Image src="/facebookVector.svg" height={33} width={33} alt="social media image" />
-                </a>
-                <a href="https://www.instagram.com/rogerswildlife/" target="_blank">
-                    <Image src="/instagramVector.svg" height={33} width={33} alt="social media image" />
-                </a>
-                <a href="https://www.pinterest.com/rogerswildlife/" target="_blank">
-                    <Image src="/pinterestVector.svg" height={33} width={33} alt="social media image" />
-                </a>
+                <SocialIcon type="fb" size="3x" />
+                <SocialIcon type="ig" size="3x" />
+                <SocialIcon type="pt" size="3x" />
             </div>
             <footer className={styles.footer}>
                 <div className={styles.footer_links}>{links}</div>
