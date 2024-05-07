@@ -1,12 +1,19 @@
 :root {
     --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
         "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-    --background: #fcfcfd;
+
     --primary: #355e3b;
     --secondary: #d1d1d1;
     --accent: #484848;
+
     --text: #333333;
-    --header-text: #ffffff;
+    --button-text: #ffffff;
+    --hero-text: #ffffff;
+    --nav-text: white;
+
+    --background: #fcfcfd;
+    --donation-box-background: #ffffff;
+    --nav-background: black;
 }
 
 @font-face {

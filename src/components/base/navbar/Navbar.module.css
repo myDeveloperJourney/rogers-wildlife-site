@@ -4,7 +4,7 @@
     align-items: center;
     height: 4rem;
     padding: 1rem;
-    background-color: black;
+    background-color: var(--nav-background);
     border-top: 1px solid white;
     border-bottom: 5px solid var(--primary);
     z-index: 3;
@@ -21,7 +21,7 @@
 
 .desktop_nav > li {
     font-family: var(--font-sans);
-    color: white;
+    color: var(--nav-text);
     font-weight: 500;
     word-wrap: normal;
     text-shadow: 3px 7px 21px var(--secondary);
