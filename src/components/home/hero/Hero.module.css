@@ -5,6 +5,7 @@
     background-image: url("/images/baldeagle.png");
     background-size: cover;
     background-position-y: 30%;
+    background-repeat: no-repeat;
 }
 
 .container_inner_parent {

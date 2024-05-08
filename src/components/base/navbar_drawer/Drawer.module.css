@@ -37,7 +37,7 @@
 
 .link {
     padding-top: 2rem;
-    border-bottom: 1px rgb(158, 158, 158);
+    border-bottom: 1px rgb(0, 0, 0);
 }
 
 @media (min-width: 769px) {

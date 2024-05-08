@@ -12,7 +12,7 @@ function NavLink({ linkText, path, isScrollLink }) {
     const isActive = (pathname) => (router ? router.pathname === pathname : false);
 
     const linkStyles = {
-        borderBottom: isActive(path) ? "2px solid #000" : "none",
+        borderBottom: isActive(path) ? "2px solid #fff" : "none",
         cursor: "pointer",
     };
 
