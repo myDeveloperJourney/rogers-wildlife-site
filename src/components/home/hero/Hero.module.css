@@ -5,6 +5,7 @@
     background-image: url("/images/baldeagle.png");
     background-size: cover;
     background-position-y: 30%;
+    background-repeat: no-repeat;
 }
 
 .container_inner_parent {
@@ -31,7 +32,7 @@
 
 .text_header {
     font-size: 38px;
-    color: white;
+    color: var(--hero-text);
     font-weight: bold;
 }
 

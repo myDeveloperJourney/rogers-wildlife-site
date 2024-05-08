@@ -36,7 +36,7 @@ export default function Home() {
                             <div className={`${styles.body_top_parent}`}>
                                 {/* bird pic */}
                                 <div className={`${styles.body_top_image}`}>
-                                    <Image src={"/images/birb.jpg"} width={700} height={700} />
+                                    <Image src={"/images/birb.jpg"} alt="bird image" width={700} height={700} />
                                 </div>
                                 {/* paragraph */}
                                 <p className={`${styles.body_top_p}`}>

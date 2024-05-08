@@ -52,16 +52,16 @@
 
 .section_container > h3 {
     font-size: 35px;
-    color: #578122;
+    color: var(--primary);
 }
 
 .section_container > h4 {
     font-size: 25px;
-    color: #8bd326;
+    color: var(--text);
 }
 
 .link {
-    color: #71993c;
+    color: var(--primary);
     text-decoration: underline;
 }
 
@@ -71,8 +71,8 @@
     border: none;
     border-radius: 15px;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #825775;
-    color: #ffffff;
+    background-color: var(--primary);
+    color: var(--button-text);
 }
 
 .volunteer_btn_container {
@@ -105,8 +105,8 @@
 }
 
 .donation_box_input {
-    background-color: #ffffff;
-    color: black;
+    background-color: var(--donation-box-background);
+    color: var(--text);
     border: 1px solid black;
 }
 
@@ -114,7 +114,7 @@
     border-radius: 20px;
     border: none;
     background-color: rgb(245, 224, 35);
-    color: black;
+    color: var(--text);
     font-weight: bold;
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
@@ -166,7 +166,7 @@
     }
     .section_container > h3 {
         font-size: 25px;
-        color: #578122;
+        color: var(--primary);
     }
     .flex_column {
         flex-direction: column;

@@ -73,8 +73,17 @@ export default function Home() {
                             {/* Section 2 */}
                             <div className={styles.section_container}>
                                 <h3>Item Donations</h3>
-                                <a>
-                                    <Image />
+                                <a
+                                    href="https://www.amazon.com/registry/wishlist/2G7903YCKJDNU/ref=cm_sw_r_cp_an_wl_o_XrfAxbBQ4G2D3"
+                                    target="_blank"
+                                >
+                                    <Image
+                                        src={"/images/amazon-wishlist.jpg"}
+                                        width={270}
+                                        height={100}
+                                        alt="amazon wishlist image"
+                                        className={styles.small_bottom_margin}
+                                    />
                                 </a>
                                 <p>
                                     Our Amazon Wishlist is updated more regularly then the following list, but these are
@@ -151,9 +160,7 @@ export default function Home() {
                                             />
                                         </form>
                                     </div>
-                                    <div
-                                        className={`${styles.donation_box} ${styles.flex_center_nowidth} ${styles.small_top_margin}`}
-                                    >
+                                    <div className={`${styles.donation_box} ${styles.flex_center_nowidth} `}>
                                         <h4>Reccuring Donation</h4>
                                         <div className={`${styles.paypal_image}`}>
                                             <Image
@@ -278,7 +285,7 @@ export default function Home() {
                                 </p>
                                 <div className={styles.venmo}>
                                     <a href="https://account.venmo.com/u/Rogers-Wildlife" target="_blank">
-                                        <Image src={"/images/venmo.jpeg"} width={290} height={1000} />
+                                        <Image src={"/images/venmo.jpeg"} alt="venmo image" width={290} height={1000} />
                                     </a>
                                 </div>
                             </div>
