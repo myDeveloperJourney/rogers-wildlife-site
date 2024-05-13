@@ -27,7 +27,6 @@
 .LineBreak {
     display: block;
     margin-top: 0.25rem;
-    font-weight: 700;
     margin-bottom: 0.15rem;
 }
 
@@ -38,6 +37,7 @@
 
 .location_info {
     width: 30rem;
+    margin-right: 6rem;
 }
 
 @media (min-width: 768px) {
