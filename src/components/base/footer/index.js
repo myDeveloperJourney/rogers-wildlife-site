@@ -38,17 +38,9 @@ export default function Footer() {
                 <div>
                     <p>Rogers Wildlife Rehabilitation Center - 1430 E Cleveland Rd, Hutchins, TX 75141</p>
                 </div>
-                <div className={styles.footer_contact}>
-                    <p>
-                        Phone: <a href="tel:1-972-225-4000">972-225-4000</a>
-                    </p>
-                    <p>
-                        Email: <a href="rogerswildlife@yahoo.com">rogerswildlife@yahoo.com</a>
-                    </p>
-                </div>
                 <div>
                     <p>
-                        Copyright {new Date().getFullYear()} Rogers WIldlife Rehabilitation Center. All Rights Reserved.
+                        Copyright {new Date().getFullYear()} Rogers Wildlife Rehabilitation Center. All Rights Reserved.
                     </p>
                 </div>
             </footer>

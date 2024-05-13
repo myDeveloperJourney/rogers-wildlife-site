@@ -5,6 +5,7 @@
     width: 100%;
     flex-direction: column;
     margin: 2rem 0 0 0;
+    font-size: 1.25rem;
 }
 
 .parent_container a {
@@ -48,6 +49,6 @@
 
 @media (max-width: 425px) {
     .footer {
-        font-size: 9px;
+        font-size: .6rem;
     }
 }

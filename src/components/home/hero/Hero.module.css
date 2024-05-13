@@ -1,11 +1,13 @@
 .container_parent {
     color: white;
     height: max-content;
-    width: 100%;
+    max-width: 1124px;
     background-image: url("/images/baldeagle.png");
     background-size: cover;
     background-position-y: 30%;
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container_inner_parent {
@@ -31,7 +33,7 @@
 }
 
 .text_header {
-    font-size: 38px;
+    font-size: 3rem;
     color: var(--hero-text);
     font-weight: bold;
 }
@@ -45,18 +47,16 @@
 }
 
 .text_inc {
-    font-size: 20px;
+    font-size: 1.9rem;
 }
 
 .sub_header_container {
     text-align: right;
     width: 100%;
-    /* margin: 1rem 0; */
+    font-size: 1.25rem;
 }
 
-/* @media (max-width: 768px) {
 
-} */
 
 @media (min-width: 769px) {
     .container_parent {
@@ -87,6 +87,10 @@
         text-align: center;
         width: 100%;
         padding: 2rem 80px;
+    }
+
+    .sub_header_container {
+        font-size: 1rem;
     }
 }
 @media (max-width: 375px) {
