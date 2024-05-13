@@ -18,18 +18,25 @@
     border: 2px solid white;
     border-radius: 5px;
     background-color: transparent;
+    transition: opacity 3s ease-in-out; /* Increase duration to 3s */
 }
 
 .close_button {
     color: black;
     border: 2px solid black;
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 3s ease-in-out; /* Increase duration to 3s */
 }
 
 .clickedButton {
     position: fixed;
     top: 0.5rem;
     right: 0.5rem;
-    transition: transform 0.3s ease-in-out, opacity 1s ease-in-out, background-color 1s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 3s ease-in-out, background-color 3s ease-in-out; /* Ensure matching duration */
+}
+
+.clickedButton .close_button {
+    opacity: 1; /* Set opacity to 1 when button is clicked */
 }
 
 @media (min-width: 769px) {
