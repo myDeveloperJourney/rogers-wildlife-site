@@ -31,34 +31,27 @@ export default function Home() {
                                         <p>Rogers Wildlife Rehabilitation Center</p>
                                         <p>1430 E. Cleveland Rd.</p>
                                         <p>Hutchins, TX 75141</p>
+                                        <a href="tel:972-225-4000">972-225-4000</a>
                                     </address>
+
+                                    <h2>Hours</h2>
                                     <p>
-                                        <strong>Phone</strong>: <a href="tel:972-225-4000">972-225-4000</a>
+                                        <span className={styles.LineBreak}>Open every day, holiday hours may differ</span>
+                                        <span className={styles.LineBreak}></span>
+                                        <span className={styles.LineBreak}><strong>Fall Hours:</strong> (<i>starting Sept. 1 every day</i>) 9am - 4pm</span>
+                                        <span className={styles.LineBreak}></span>
+                                        <span className={styles.LineBreak}><strong>Summer Hours:</strong> 10am - 4pm</span>
                                     </p>
-                                    <p>
-                                        <strong>Email for general Inquires</strong>:{" "}
-                                        <a href="mailto:contact@rogerswildlife.org">contact@rogerswildlife.org</a>
-                                    </p>
-                                    <div>Social Icons</div>
                                 </div>
                             </section>
                             <section className={styles.PageSection}>
-                                <h2>Hours</h2>
+                                <h2>Additional Info</h2>
                                 <p>
-                                    <span className={styles.LineBreak}>Open every day. Holiday hours may differ</span>
-                                    <span className={styles.LineBreak}>Fall Hours: 9am - 4pm</span>
-                                    <span className={styles.LineBreak}>Starting Sept. 1 - Every day</span>
-                                    <span className={styles.LineBreak}>Summer Hours: 10am - 4pm</span>
                                     <span className={styles.LineBreak}>
-                                        Due to the corona virus situation we are open for bird drop offs between 10-4
-                                        every day.
+                                    We are open for bird drop offs during normal operating hours.
                                     </span>
-                                    This is our busy season, and we do our best to answer every call, but due to the
-                                    heavy call volume and calls coming in back to back, you may have to call a couple of
-                                    times.
-                                    <br />
-                                    Please be patient... we are all volunteers and doing the best we can with the volume
-                                    of birds and calls coming in.
+                                    Please be patient, we are all volunteers and doing the best we can with the volume
+                                    of birds coming in.
                                 </p>
                             </section>
                             <section className={styles.PageSection}>
@@ -78,10 +71,10 @@ export default function Home() {
                                 <h2>Far Away? Find Someone Closer</h2>
                                 <ul>
                                     <li>
-                                        <a href="http://tpwd.texas.gov/huntwild/wild/rehab/list/" target="_blank">
+                                        <u><a href="http://tpwd.texas.gov/huntwild/wild/rehab/list/" target="_blank">
                                             List of Texas Wildlife Rehabilitators by County
-                                        </a>{" "}
-                                        (Make sure to check surrounding counties too!)
+                                        </a></u>{" "}
+                                        (<i>make sure to check surrounding counties too!</i>)
                                     </li>
                                     <li>Call the DFW Wildlife Coalition at 972-234-9453</li>
                                     <li>
