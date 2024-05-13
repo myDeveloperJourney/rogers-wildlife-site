@@ -10,10 +10,15 @@
     max-width: 1024px;
 }
 
+.container_title {
+    font-size: 1.3rem;
+}
+
 @media (min-width: 426px) {
     .inner_container {
         margin: 0 2rem;
     }
+
 }
 
 @media (max-width: 425px) {

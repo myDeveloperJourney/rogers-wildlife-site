@@ -8,7 +8,7 @@ export default function Hero() {
                     <div className={styles.text_inner_container}>
                         <p className={`${styles.text_header} ${styles.text_head_left}`}>Rogers</p>
                         <p className={`${styles.text_header} ${styles.text_head_right}`}>Wildlife</p>
-                        <p className={styles.text_inc}>Rehabilitation, Inc.</p>
+                        <p className={styles.text_inc}>Rehabilitation Center</p>
                     </div>
                 </div>
                 <div className={styles.sub_header_container}>

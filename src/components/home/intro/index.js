@@ -5,7 +5,7 @@ export default function Intro() {
         <div className={styles.parent_container}>
             <div className={styles.inner_container}>
                 <p>
-                    <strong>Rogers Wildlife Rehabilitation Center</strong> is a 501c3 nonprofit wildlife rescue
+                    <span className={styles.container_title}><strong>Rogers Wildlife Rehabilitation Center</strong></span> is a 501c3 nonprofit wildlife rescue
                     organization in the Dallas/Fort-Worth metroplex specializing in the rescue and rehabilitation of
                     injured, sick and orphaned birds of all types. Our goal is to restore the health and independence of
                     these precious creatures so that they may be released back into their natural habitat. Rogers
