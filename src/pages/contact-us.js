@@ -31,7 +31,7 @@ export default function Home() {
                                         <p>Rogers Wildlife Rehabilitation Center</p>
                                         <p>1430 E. Cleveland Rd.</p>
                                         <p>Hutchins, TX 75141</p>
-                                        <a href="tel:972-225-4000">972-225-4000</a>
+                                        <a href="tel:1-972-225-4000">(972) 225-4000</a>
                                     </address>
 
                                     <h2>Hours</h2>
