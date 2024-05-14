@@ -14,7 +14,7 @@ export default function Hero() {
                 <div className={styles.sub_header_container}>
                     <p>Found an orphaned or injured bird?</p>
                     <p>Please contact us at</p>
-                    <a href="tel:1-682-260-9080">(972) 225-4000</a>
+                    <a href="tel:1-972-225-4000">(972) 225-4000</a>
                 </div>
             </div>
         </div>
