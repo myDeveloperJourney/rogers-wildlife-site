@@ -6,8 +6,9 @@ import Title from "@/components/home/title_socials";
 import Intro from "@/components/home/intro";
 import Map from "@/components/home/map_actions";
 
-const inter = Inter({ subsets: ["latin"] });
+<button type="button" zeffy-form-link="https://www.zeffy.com/embed/donation-form/949079ad-523d-417a-a441-e947ee0271f9?modal=true">Donate</button>
 
+const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
     return (
         <>
