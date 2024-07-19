@@ -129,7 +129,7 @@ export default function Home() {
                                     <iframe
                                         title="Donation form powered by Zeffy"
                                         style={{
-                                            position: "absolute",
+                                            position: "relative",
                                             border: 0,
                                             top: 0,
                                             left: 0,
@@ -138,10 +138,9 @@ export default function Home() {
                                             width: "100%",
                                             height: "83rem",
                                         }}
-                                        className="donation_form"
                                         src="https://www.zeffy.com/embed/donation-form/949079ad-523d-417a-a441-e947ee0271f9"
-                                        allowpaymentrequest
-                                        allowTransparency="true"
+                                        allowpaymentrequest="true"
+                                        allowtransparency="true"
                                     ></iframe>
                                 </div>
                                 <div className={`${styles.flex_center} ${styles.donation_box_container}`}>
