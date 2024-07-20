@@ -42,6 +42,7 @@
 }
 
 .section_container {
+    margin-top: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -53,6 +54,7 @@
 .section_container > h3 {
     font-size: 35px;
     color: var(--primary);
+    margin-bottom: 1rem;
 }
 
 .section_container > h4 {
@@ -73,10 +75,11 @@
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--primary);
     color: var(--button-text);
+    width: 20rem;
 }
 
 .volunteer_btn_container {
-    margin-top: 1.5rem;
+    margin: 3rem 0;
 }
 
 /* Section three */
@@ -96,7 +99,6 @@
 .donation_box {
     height: 325px;
     width: 350px;
-    /* background-color: #f3fbe9; */
     border-radius: 10px;
 }
 
