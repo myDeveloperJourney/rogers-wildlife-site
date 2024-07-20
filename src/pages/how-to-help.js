@@ -124,6 +124,21 @@ export default function Home() {
                                     appreciated as we rely entirely on private donations as we receive no federal, state
                                     or local government funding.
                                 </p>
+
+                                <div className="donation_form_parent">
+                                    <iframe
+                                        title="Donation form powered by Zeffy"
+                                        style={{
+                                            position: "relative",
+                                            border: 0,
+                                            width: "100%",
+                                            height: "83rem",
+                                        }}
+                                        src="https://www.zeffy.com/embed/donation-form/949079ad-523d-417a-a441-e947ee0271f9"
+                                        allowpaymentrequest="true"
+                                        allowtransparency="true"
+                                    ></iframe>
+                                </div>
                                 <div className={`${styles.flex_center} ${styles.donation_box_container}`}>
                                     <div
                                         className={`${styles.donation_box} ${styles.small_right_margin} ${styles.flex_center_nowidth} ${styles.no_margin}`}
