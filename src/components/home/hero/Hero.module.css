@@ -36,7 +36,7 @@
 .button {
     width: 11rem;
     margin-bottom: 1rem;
-    background-color: var(--social-blue);
+    background-color: var(--primary-light);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
