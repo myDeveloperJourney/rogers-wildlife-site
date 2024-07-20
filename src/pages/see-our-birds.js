@@ -1,11 +1,33 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
 
+import styles from "@/styles/pages/see-our-birds.module.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Birds() {
+    const images = [
+        "/images/Mr-Chitters-on-log.jpg",
+        "/images/birb.jpg",
+        "/images/birb.jpg",
+        "/images/baldeagle.png",
+        "/images/birb.jpg",
+        "/images/birb.jpg",
+        "/images/birb.jpg",
+        "/images/birb.jpg",
+        "/images/Mr-Chitters-on-log.jpg",
+        "/images/birb.jpg",
+        "/images/birb.jpg",
+        "/images/baldeagle.png",
+        "/images/Mr-Chitters-on-log.jpg",
+        "/images/birb.jpg",
+        "/images/birb.jpg",
+        "/images/baldeagle.png",
+    ];
+
     return (
         <>
             <Head>
@@ -17,7 +39,20 @@ export default function Home() {
             <main className={`${inter.className}`}>
                 <Hero />
                 <Layout>
-                    <h1>See Our Birds</h1>
+                    <section className={styles.flex_center}>
+                        <div className={styles.gallery_parent}>
+                            {images.map((imageSource, index) => (
+                                <div key={index} className={styles.image_container}>
+                                    <Image
+                                        className={styles.image_styles}
+                                        src={imageSource}
+                                        fill={true}
+                                        alt="bird image"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </section>
                 </Layout>
             </main>
         </>
