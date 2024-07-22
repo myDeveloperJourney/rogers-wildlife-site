@@ -1,3 +1,6 @@
+import graphQLClient from "../lib/utils/graphql-client";
+import { GET_IMAGES } from "../lib/utils/query";
+
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -8,26 +11,19 @@ import styles from "@/styles/pages/see-our-birds.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Birds() {
-    const images = [
-        "/images/Mr-Chitters-on-log.jpg",
-        "/images/birb.jpg",
-        "/images/birb.jpg",
-        "/images/baldeagle.png",
-        "/images/birb.jpg",
-        "/images/birb.jpg",
-        "/images/birb.jpg",
-        "/images/birb.jpg",
-        "/images/Mr-Chitters-on-log.jpg",
-        "/images/birb.jpg",
-        "/images/birb.jpg",
-        "/images/baldeagle.png",
-        "/images/Mr-Chitters-on-log.jpg",
-        "/images/birb.jpg",
-        "/images/birb.jpg",
-        "/images/baldeagle.png",
-    ];
+export async function getServerSideProps() {
+    const data = await graphQLClient.request(GET_IMAGES);
 
+    const assets = data.assets;
+
+    return {
+        props: {
+            assets,
+        },
+    };
+}
+
+export default function Birds({ assets }) {
     return (
         <>
             <Head>
@@ -41,13 +37,13 @@ export default function Birds() {
                 <Layout>
                     <section className={styles.flex_center}>
                         <div className={styles.gallery_parent}>
-                            {images.map((imageSource, index) => (
+                            {assets.map((gallery, index) => (
                                 <div key={index} className={styles.image_container}>
                                     <Image
                                         className={styles.image_styles}
-                                        src={imageSource}
+                                        src={gallery.url}
                                         fill={true}
-                                        alt="bird image"
+                                        alt={gallery.imageSingle.description}
                                     />
                                 </div>
                             ))}
