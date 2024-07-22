@@ -28,6 +28,12 @@
     border-radius: 10px;
 }
 
+.error_message {
+    height: calc(100vh - 35rem);
+    width: fit-content;
+    padding: 1rem 1rem 0 2rem;
+}
+
 @media (max-width: 816px) {
     .image_container {
         height: 18rem;

@@ -12,15 +12,19 @@ import styles from "@/styles/pages/see-our-birds.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function getServerSideProps() {
-    const data = await graphQLClient.request(GET_IMAGES);
+    try {
+        const data = await graphQLClient.request(GET_IMAGES);
 
-    const assets = data.assets;
+        const assets = data.assets;
 
-    return {
-        props: {
-            assets,
-        },
-    };
+        return {
+            props: {
+                assets,
+            },
+        };
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 export default function Birds({ assets }) {
@@ -37,16 +41,22 @@ export default function Birds({ assets }) {
                 <Layout>
                     <section className={styles.flex_center}>
                         <div className={styles.gallery_parent}>
-                            {assets.map((gallery, index) => (
-                                <div key={index} className={styles.image_container}>
-                                    <Image
-                                        className={styles.image_styles}
-                                        src={gallery.url}
-                                        fill={true}
-                                        alt={gallery.imageSingle.description}
-                                    />
+                            {assets ? (
+                                assets.map((gallery, index) => (
+                                    <div key={index} className={styles.image_container}>
+                                        <Image
+                                            className={styles.image_styles}
+                                            src={gallery.url}
+                                            fill={true}
+                                            alt={gallery.imageSingle.description}
+                                        />
+                                    </div>
+                                ))
+                            ) : (
+                                <div className={styles.error_message}>
+                                    <p>Something went wrong. Please come back to this page another time.</p>
                                 </div>
-                            ))}
+                            )}
                         </div>
                     </section>
                 </Layout>
