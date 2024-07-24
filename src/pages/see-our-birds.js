@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export async function getServerSideProps() {
     try {
-        const data = await graphQLClient.request(GET_IMAGES);
+        let data = await graphQLClient.request(GET_IMAGES);
 
         const assets = data.assets;
 
@@ -24,10 +24,19 @@ export async function getServerSideProps() {
         };
     } catch (error) {
         console.error(error);
+
+        const assets = null;
+
+        return {
+            props: {
+                assets,
+            },
+        };
     }
 }
 
 export default function Birds({ assets }) {
+    console.log(assets);
     return (
         <>
             <Head>
@@ -41,7 +50,7 @@ export default function Birds({ assets }) {
                 <Layout>
                     <section className={styles.flex_center}>
                         <div className={styles.gallery_parent}>
-                            {assets ? (
+                            {assets.length > 0 ? (
                                 assets.map((gallery, index) => (
                                     <div key={index} className={styles.image_container}>
                                         <Image
