@@ -36,7 +36,6 @@ export async function getServerSideProps() {
 }
 
 export default function Birds({ assets }) {
-    console.log(assets);
     return (
         <>
             <Head>
@@ -50,14 +49,14 @@ export default function Birds({ assets }) {
                 <Layout>
                     <section className={styles.flex_center}>
                         <div className={styles.gallery_parent}>
-                            {assets.length > 0 ? (
+                            {assets?.length > 0 || assets != null ? (
                                 assets.map((gallery, index) => (
                                     <div key={index} className={styles.image_container}>
                                         <Image
                                             className={styles.image_styles}
                                             src={gallery.url}
                                             fill={true}
-                                            alt={gallery.imageSingle.description}
+                                            alt={gallery.imageSingle[0].description}
                                         />
                                     </div>
                                 ))
