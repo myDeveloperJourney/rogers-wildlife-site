@@ -1,11 +1,41 @@
+import graphQLClient from "../lib/utils/graphql-client";
+import { GET_IMAGES } from "../lib/utils/query";
+
 import Head from "next/head";
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
 
+import styles from "@/styles/pages/see-our-birds.module.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export async function getServerSideProps() {
+    try {
+        let data = await graphQLClient.request(GET_IMAGES);
+
+        const assets = data.assets;
+
+        return {
+            props: {
+                assets,
+            },
+        };
+    } catch (error) {
+        console.error(error);
+
+        const assets = null;
+
+        return {
+            props: {
+                assets,
+            },
+        };
+    }
+}
+
+export default function Birds({ assets }) {
     return (
         <>
             <Head>
@@ -17,7 +47,26 @@ export default function Home() {
             <main className={`${inter.className}`}>
                 <Hero />
                 <Layout>
-                    <h1>See Our Birds</h1>
+                    <section className={styles.flex_center}>
+                        <div className={styles.gallery_parent}>
+                            {assets?.length > 0 || assets != null ? (
+                                assets.map((gallery, index) => (
+                                    <div key={index} className={styles.image_container}>
+                                        <Image
+                                            className={styles.image_styles}
+                                            src={gallery.url}
+                                            fill={true}
+                                            alt={gallery.imageSingle[0].description}
+                                        />
+                                    </div>
+                                ))
+                            ) : (
+                                <div className={styles.error_message}>
+                                    <p>Something went wrong. Please come back to this page another time.</p>
+                                </div>
+                            )}
+                        </div>
+                    </section>
                 </Layout>
             </main>
         </>
