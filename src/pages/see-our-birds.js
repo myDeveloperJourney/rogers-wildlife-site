@@ -21,7 +21,7 @@ export async function getStaticProps() {
             props: {
                 assets,
             },
-            revalidate: 60,
+            revalidate: 10,
         };
     } catch (error) {
         console.error(error);
