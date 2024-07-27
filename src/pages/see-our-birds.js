@@ -11,7 +11,7 @@ import styles from "@/styles/pages/see-our-birds.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     try {
         let data = await graphQLClient.request(GET_IMAGES);
 
