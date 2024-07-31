@@ -15,16 +15,29 @@ export default function Home() {
         <>
             <Head>
                 <title>How to Help | Rogers Wildlife Rehabilitation Center</title>
-                <meta name="description" content="With your help, we can provide food, medical care and safe housing to the thousands of sick, injured and orphaned birds we take in yearly. On average, the costs to run RWRC $740 per day, that's just over $22,000 a month! Your donations are hugely appreciated as we rely entirely on private donations as we receive no federal, state or local government funding." />
+                <meta
+                    name="description"
+                    content="With your help, we can provide food, medical care and safe housing to the thousands of sick, injured and orphaned birds we take in yearly. On average, the costs to run RWRC $740 per day, that's just over $22,000 a month! Your donations are hugely appreciated as we rely entirely on private donations as we receive no federal, state or local government funding."
+                />
+                <link rel="canonical" href="https://rogerswildlife.org/how-to-help" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
+                <meta property="og:title" content="How to Help | Rogers Wildlife Rehabilitation Center" />
+                <meta
+                    property="og:description"
+                    content="With your help, we can provide food, medical care and safe housing to the thousands of sick, injured and orphaned birds we take in yearly. On average, the costs to run RWRC $740 per day, that's just over $22,000 a month! Your donations are hugely appreciated as we rely entirely on private donations as we receive no federal, state or local government funding."
+                />
+                <meta property="og:url" content="https://rogerswildlife.org/how-to-help" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="/images/Mr-Chitters-on-log.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <main className={`${inter.className}`}>
                 <Hero />
                 <Layout>
                     <div className={`${styles.flex_center} ${styles.parent_container}`}>
                         <div className={styles.inner_container}>
-                        <div className={styles.section_container}>
+                            <div className={styles.section_container}>
                                 <h3>Monetary Donations</h3>
                                 <p>
                                     With your help, we can provide food, medical care and safe housing to the thousands
@@ -42,6 +55,7 @@ export default function Home() {
                                             border: 0,
                                             width: "100%",
                                             height: "83rem",
+                                            padding: 0,
                                         }}
                                         src="https://www.zeffy.com/embed/donation-form/949079ad-523d-417a-a441-e947ee0271f9"
                                         allowpaymentrequest="true"
@@ -138,8 +152,7 @@ export default function Home() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className={styles.section_container}>
-                            </div>
+                            <div className={styles.section_container}></div>
                         </div>
                     </div>
                 </Layout>
