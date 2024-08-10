@@ -48,7 +48,7 @@ export default function Home() {
                                         allowtransparency="true"
                                     ></iframe>
                                 </div>
-                                {/* <div className={`${styles.flex_center} ${styles.donation_box_container}`}>
+                                <div className={`${styles.flex_center} ${styles.donation_box_container}`}>
                                     <div
                                         className={`${styles.donation_box} ${styles.small_right_margin} ${styles.flex_center_nowidth} ${styles.no_margin}`}
                                     >
@@ -188,8 +188,8 @@ export default function Home() {
                                         </form> 
                                         End Donation form with inputs 
                                     </div>
-                                </div> */}
-                                {/* <p>Or donate via JustGive by clicking on the button below!</p>
+                                </div> 
+                                <p>Or donate via JustGive by clicking on the button below!</p>
                                 <a href="http://www.justgive.org/nonprofits/donate.jsp?ein=01-0571276" target="_blank">
                                     <Image
                                         alt="Donate using JustGive"
@@ -304,7 +304,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className={styles.section_container}>
-                                {/* <h3>Show Your RWRC Love!</h3>
+                            <h3>Show Your RWRC Love!</h3>
                                 <h4>Cafepress</h4>
                                 <p>
                                     <a
@@ -316,8 +316,8 @@ export default function Home() {
                                     </a>{" "}
                                     Shop for Rogers custom bird content at CafePress. The proceeds go towards helping us
                                     provide medical care and treatment to the thousands of birds we take in every year.
-                                </p> */}
-                                {/* <div className={`${styles.flex_center} ${styles.flex_column}`}>
+                                </p> 
+                                <div className={`${styles.flex_center} ${styles.flex_column}`}>
                                     <a href="https://www.cafepress.com/rogerswildlife" target="_blank">
                                         <div className={`${styles.justgive_btn}`}>
                                             <Image
@@ -348,8 +348,8 @@ export default function Home() {
                                             />
                                         </div>
                                     </a>
-                                </div> */}
-                                {/* <h3>Other ways to help</h3>
+                                </div>
+                                <h3>Other ways to help</h3>
                                 <div className={`${styles.flex} ${styles.flex_column}`}>
                                     <a
                                         href="https://www.amazon.com/registry/wishlist/2G7903YCKJDNU/ref=cm_sw_r_cp_an_wl_o_XrfAxbBQ4G2D3"
@@ -377,7 +377,7 @@ export default function Home() {
                                             />
                                         </div>
                                     </a>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
