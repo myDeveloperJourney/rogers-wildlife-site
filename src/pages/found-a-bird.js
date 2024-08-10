@@ -5,7 +5,7 @@ import Hero from "@/components/home/hero";
 
 import Image from "next/image";
 
-import styles from "@/styles/pages/Found_Bird.module.css";
+import styles from "@/styles/pages/found-a-bird.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

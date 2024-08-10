@@ -5,8 +5,10 @@ import Hero from "@/components/home/hero";
 
 import Image from "next/image";
 
-import styles from "@/styles/pages/Help.module.css";
+import styles from "@/styles/pages/how-to-help.module.css";
 import Link from "next/link";
+import PayPal from "@/components/ui/paypal";
+import Venmo from "@/components/ui/venmo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -152,7 +154,14 @@ export default function Home() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className={styles.section_container}></div>
+                            <div className={styles.section_container}>
+                                <h3>Donate With PayPal</h3>
+                                <PayPal />
+                            </div>
+                            <div className={styles.section_container}>
+                                <h3>Donate With Venmo</h3>
+                                <Venmo />
+                            </div>
                         </div>
                     </div>
                 </Layout>
