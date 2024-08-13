@@ -4,10 +4,10 @@ import styles from "@/components/home/hero/Hero.module.css";
 
 export default function Hero() {
     const router = useRouter();
-    const excludedPaths = ["/how-to-help"];
     const [isOnHelpPage, setIsOnHelpPage] = useState(false);
-
+    
     useEffect(() => {
+        const excludedPaths = ["/how-to-help"];
         if (excludedPaths.includes(router.pathname)) {
             setIsOnHelpPage(true);
         }
