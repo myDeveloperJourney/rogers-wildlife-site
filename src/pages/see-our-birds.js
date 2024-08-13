@@ -70,7 +70,7 @@ export default function Birds({ assets }) {
                                             className={styles.image_styles}
                                             src={gallery.url}
                                             fill={true}
-                                            alt={gallery.imageSingle[0].description}
+                                            alt={gallery.imageSingle.length ? gallery.imageSingle[0].description : "An image of a bird at Rogers Wildlife"}
                                         />
                                     </div>
                                 ))
