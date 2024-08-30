@@ -3,9 +3,11 @@ import { GET_IMAGES } from "../lib/utils/query";
 
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { Inter } from "next/font/google";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
+import DonateButton from "@/components/ui/donate-button";
 
 import styles from "@/styles/pages/see-our-birds.module.css";
 
@@ -36,7 +38,13 @@ export async function getStaticProps() {
     }
 }
 
-export default function Birds({ assets }) {
+export default function SeeOurBirds({ assets }) {
+    const router = useRouter();
+
+    const handleNavToDonatePage = () => {
+        router.push("/how-to-help");
+    };
+
     return (
         <>
             <Head>
@@ -65,15 +73,21 @@ export default function Birds({ assets }) {
                         <div className={styles.gallery_parent}>
                             {assets?.length > 0 || assets != null ? (
                                 assets.map((gallery, index) => (
-                                    <div key={index} className={styles.image_container}>
-                                        <Image
-                                            className={styles.image_styles}
-                                            src={gallery.url}
-                                            fill={true}
-                                            alt={gallery.imageSingle.length ? gallery.imageSingle[0].description : "An image of a bird at Rogers Wildlife"}
-                                        />
+                                    <div key={index} className={styles.card_container}>
+                                        <div className={styles.image_container}>
+                                            <Image
+                                                className={styles.image_styles}
+                                                src={gallery.url}
+                                                fill={true}
+                                                alt={gallery.imageGallery[0].image_description}
+                                            />
+                                        </div>
+
+                                        <p className={styles.bird_story}>{gallery.imageGallery[0].bird_story}</p>
+                                        <DonateButton onGallery={true} buttonText={"Click to Support " + gallery.imageGallery[0].name} />
                                     </div>
-                                ))
+                                )
+                            )
                             ) : (
                                 <div className={styles.error_message}>
                                     <p>Something went wrong. Please come back to this page another time.</p>

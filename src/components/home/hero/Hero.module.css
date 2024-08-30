@@ -32,19 +32,6 @@
     font-family: "Papyrus";
 }
 
-
-.button {
-    width: 11rem;
-    margin-bottom: 1rem;
-    background-color: var(--primary-light);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .text_header {
     font-size: 3rem;
     color: var(--hero-text);

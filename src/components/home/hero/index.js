@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "@/components/home/hero/Hero.module.css";
+import DonateButton from "@/components/ui/donate-button";
 
 export default function Hero() {
     const router = useRouter();
-    const [isOnHelpPage, setIsOnHelpPage] = useState(false);
+    const [isOnExcludedPage, setIsOnExcludedPage] = useState(false);
     
     useEffect(() => {
-        const excludedPaths = ["/how-to-help"];
+        const excludedPaths = ["/how-to-help", "/see-our-birds"];
         if (excludedPaths.includes(router.pathname)) {
-            setIsOnHelpPage(true);
+            setIsOnExcludedPage(true);
         }
     }   , [router.pathname]);
 
@@ -24,10 +25,8 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className={styles.sub_header_container}>
-                    {!isOnHelpPage && (
-                        <button className={styles.button} type="button" zeffy-form-link="https://www.zeffy.com/embed/donation-form/949079ad-523d-417a-a441-e947ee0271f9?modal=true">
-                            Make A Donation
-                        </button>
+                    {!isOnExcludedPage && (
+                        <DonateButton onGallery={false} buttonText={"Make a Donation"} />
                     )}
                     <p>Found an orphaned or injured bird?</p>
                     <p>Please contact us at</p>
