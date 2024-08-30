@@ -14,18 +14,52 @@
     flex-wrap: wrap;
 }
 
-.image_container {
+.card_container {
     position: relative;
-    height: 400px;
-    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 480px;
+    max-height: 480px;
+    width: 300px;
     margin: 10px 10px 10px 10px;
+    border: 1px solid rgb(184, 184, 184);
     border-radius: 10px;
     overflow: hidden;
+    padding: 10px;
 }
 
 .image_styles {
     object-fit: cover;
-    border-radius: 1px;
+}
+
+.image_container {
+    position: relative;
+    width: full;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.bird_story {
+    font-size: 14px;
+    width: full;
+    height: 200px;
+    max-height: 200px;
+    margin-bottom: 16px;
+}
+
+.donate_button {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 220px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary-light);
 }
 
 .error_message {

@@ -5,8 +5,9 @@ export const GET_IMAGES = gql`
         assets(orderBy: publishedAt_DESC) {
             url
             fileName
-            imageSingle {
-                description
+            imageGallery {
+                bird_story
+                image_description
             }
         }
     }
@@ -22,7 +23,8 @@ export const GET_IMAGES = gql`
         "fileName": "birb.jpg",
         "imageSingle": [
           {
-            "description": "side view of some kind of blue bird"
+            "bird_story": null,
+            "image_description": "An image of a hawk"
           }
         ]
       },

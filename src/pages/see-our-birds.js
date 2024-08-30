@@ -65,13 +65,18 @@ export default function Birds({ assets }) {
                         <div className={styles.gallery_parent}>
                             {assets?.length > 0 || assets != null ? (
                                 assets.map((gallery, index) => (
-                                    <div key={index} className={styles.image_container}>
-                                        <Image
-                                            className={styles.image_styles}
-                                            src={gallery.url}
-                                            fill={true}
-                                            alt={gallery.imageSingle[0].description}
-                                        />
+                                    <div key={index} className={styles.card_container}>
+                                        <div className={styles.image_container}>
+                                            <Image
+                                                className={styles.image_styles}
+                                                src={gallery.url}
+                                                fill={true}
+                                                alt={gallery.imageGallery[0].image_description}
+                                            />
+                                        </div>
+
+                                        <p className={styles.bird_story}>{gallery.imageGallery[0].bird_story}</p>
+                                        <button className={styles.donate_button}>Donate to Support this Bird</button>
                                     </div>
                                 ))
                             ) : (
