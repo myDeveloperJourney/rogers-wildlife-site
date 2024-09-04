@@ -6,9 +6,11 @@ export const GET_IMAGES = gql`
             url
             fileName
             imageGallery {
-                bird_story
-                image_description
+                story
+                description
                 name
+                species
+                story
             }
         }
     }
