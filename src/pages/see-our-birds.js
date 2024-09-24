@@ -3,7 +3,6 @@ import { GET_IMAGES } from "../lib/utils/query";
 
 import Head from "next/head";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import { Inter } from "next/font/google";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
@@ -39,12 +38,6 @@ export async function getStaticProps() {
 }
 
 export default function SeeOurBirds({ assets }) {
-    const router = useRouter();
-
-    const handleNavToDonatePage = () => {
-        router.push("/how-to-help");
-    };
-
     return (
         <>
             <Head>
@@ -71,7 +64,7 @@ export default function SeeOurBirds({ assets }) {
                 <Layout>
                     <section className={styles.flex_center}>
                         <div className={styles.gallery_parent}>
-                            {assets?.length > 0 || assets != null ? (
+                            {assets.length > 0 || assets === null ? (
                                 assets.map((gallery, index) => (
                                     <div key={index} className={styles.card_container}>
                                         <div className={styles.image_container}>
@@ -79,21 +72,21 @@ export default function SeeOurBirds({ assets }) {
                                                 className={styles.image_styles}
                                                 src={gallery.url}
                                                 fill={true}
-                                                alt={gallery.imageGallery[0].description}
+                                                alt={gallery.imageGallery[0]?.description}
                                             />
                                         </div>
-                                        <h3><strong>{gallery.imageGallery[0].name}</strong></h3>
-                                        <h5><strong>{gallery.imageGallery[0].species}</strong></h5>
-                                        <p className={styles.bird_story}>{gallery.imageGallery[0].story}</p>
+                                        <h3><strong>{gallery.imageGallery[0]?.name}</strong></h3>
+                                        <h5><strong>{gallery.imageGallery[0]?.species}</strong></h5>
+                                        <p className={styles.bird_story}>{gallery.imageGallery[0]?.story}</p>
                                         <div className={styles.donate_button_container}>
-                                            <DonateButton onGallery={true} buttonText={"Click to Support " + gallery.imageGallery[0].name} />
+                                            <DonateButton onGallery={true} buttonText={"Click to Support " + gallery.imageGallery[0]?.name} />
                                         </div>
                                     </div>
                                 )
                             )
                             ) : (
                                 <div className={styles.error_message}>
-                                    <p>Something went wrong. Please come back to this page another time.</p>
+                                    <h3>Something went wrong. Please come back to this page another time.</h3>
                                 </div>
                             )}
                         </div>
