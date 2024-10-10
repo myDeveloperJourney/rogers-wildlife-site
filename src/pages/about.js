@@ -86,8 +86,8 @@ export default function Home() {
                                 {/* paragraph */}
                                 <div>
                                     <p className={`${styles.body_bot_p}`}>
-                                        Over the last decade, RWRC has provided medical treatment and care for more than
-                                        forty thousand birds. The majority of birds that we receive come to us with
+                                        Over the last 25 years, RWRC has provided medical treatment and care for more than
+                                        120,000 birds. The majority of birds that we receive come to us with
                                         life-threatening injuries as a result of animal attacks, nest displacement
                                         (orphaned), automobile strikes, natural/man-made disasters, or abuse. Our Center
                                         receives rescued birds from individuals, the SPCA, various city animal control
