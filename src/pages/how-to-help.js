@@ -44,7 +44,7 @@ export default function Home() {
                                 <p>
                                     With your help, we can provide food, medical care and safe housing to the thousands
                                     of sick, injured and orphaned birds we take in yearly. On average, the costs to run
-                                    RWRC $740 per day, that&apos;s just over $22,000 a month! Your donations are hugely
+                                    RWRC $1100 per day, that&apos;s just over $33,000 a month! Your donations are hugely
                                     appreciated as we rely entirely on private donations as we receive no federal, state
                                     or local government funding.
                                 </p>
