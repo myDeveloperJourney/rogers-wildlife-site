@@ -94,7 +94,6 @@ export default function Home() {
                                         appreciated!
                                     </li>
                                     <li>Facility maintenance - repairs, cleaning, etc.</li>
-                                    <li>Outreach program development - public relations, speaking at schools, etc.</li>
                                 </ul>
                                 <p className={styles.small_bottom_margin}>
                                     Group and individual volunteers are necessary to keep RWRC going. If you feel as
