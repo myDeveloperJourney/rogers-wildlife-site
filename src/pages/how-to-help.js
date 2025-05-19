@@ -147,6 +147,14 @@ export default function Home() {
                                         <li>AA, AAA, D Cell batteries</li>
                                     </ul>
                                 </div>
+                                <div className={styles.section_two_button_container}>
+                                    <Link 
+                                        target="_blank" 
+                                        href="https://www.amazon.com/hz/wishlist/ls/2G7903YCKJDNU?ref_=wl_share" 
+                                        className={styles.section_two_button}>
+                                            Click Here For Our Amazon Wishlist
+                                    </Link>
+                                </div>
                             </div>
                             <div className={styles.section_container}>
                                 <h3>Donate With PayPal</h3>
