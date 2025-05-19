@@ -56,8 +56,11 @@ export default function Home() {
                                             position: "relative",
                                             border: 0,
                                             width: "100%",
-                                            height: "83rem",
+                                            height: "28rem",
                                             padding: 0,
+                                            marginLeft: 'auto',
+                                            marginRight: 'auto',
+                                            marginTop: '3rem'
                                         }}
                                         src="https://www.zeffy.com/embed/donation-form/949079ad-523d-417a-a441-e947ee0271f9"
                                         allowpaymentrequest="true"
