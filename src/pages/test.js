@@ -10,7 +10,7 @@ export default function TestChatBot() {
         const script = document.createElement("script");
         script.src = "https://beta.leadconnectorhq.com/loader.js";
         script.setAttribute("data-resources-url", "https://beta.leadconnectorhq.com/chat-widget/loader.js");
-        script.setAttribute("data-widget-id", "68bf0925bb5dbfc4527a9a63");
+        script.setAttribute("data-widget-id", "68c46a5f916fc50e26136934");
         script.async = true;
         document.body.appendChild(script);
         return () => {
