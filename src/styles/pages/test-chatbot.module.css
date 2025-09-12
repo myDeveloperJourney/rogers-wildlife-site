@@ -1,0 +1,28 @@
+/* styles for the AI Chat Bot Test Page */
+.testChatContainer {
+  max-width: 500px;
+  margin: 3rem auto 0 auto;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: center;
+}
+
+.testChatTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2d3a4a;
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .testChatContainer {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 10px;
+  }
+  .testChatTitle {
+    font-size: 1.2rem;
+  }
+}
