@@ -1,14 +1,16 @@
+
+import { useEffect } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Layout from "@/components/base/layout";
 import Hero from "@/components/home/hero";
-// import Map from "@/components/ui/map";
 import styles from "@/styles/pages/contact-us.module.css";
 import Map from "@/components/ui/map";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function ContactUs() {
+
     return (
         <>
             <Head>
